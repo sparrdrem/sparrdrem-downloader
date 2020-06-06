@@ -1,5 +1,22 @@
 #pragma once
 
+/* Shit broke
+#define WIN32_LEAN_AND_MEAN
+#include <Windows.h>
+#include <tchar.h>
+
+#include <iostream>
+#include <iomanip>
+
+#include "hack.h"
+
+#include <wininet.h>
+
+using namespace std;
+*/
+
+#include "DownloadDb.h"
+
 namespace sparrdremdownloader {
 
 	using namespace System;
@@ -9,6 +26,8 @@ namespace sparrdremdownloader {
 	using namespace System::Data;
 	using namespace System::Drawing;
 	using namespace System::Diagnostics;
+	using namespace System::Net;
+	using namespace System::IO;
 
 	/// <summary>
 	/// Summary for MainPage
@@ -46,6 +65,8 @@ namespace sparrdremdownloader {
 	private: System::Windows::Forms::ComboBox^ VersionComboBox;
 	private: System::Windows::Forms::Button^ ExitBtn;
 	private: System::Windows::Forms::Button^ DownloadBtn;
+	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::Label^ playableState;
 
 
 	private:
@@ -72,6 +93,8 @@ namespace sparrdremdownloader {
 			this->VersionComboBox = (gcnew System::Windows::Forms::ComboBox());
 			this->ExitBtn = (gcnew System::Windows::Forms::Button());
 			this->DownloadBtn = (gcnew System::Windows::Forms::Button());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->playableState = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -146,11 +169,24 @@ namespace sparrdremdownloader {
 			resources->ApplyResources(this->DownloadBtn, L"DownloadBtn");
 			this->DownloadBtn->Name = L"DownloadBtn";
 			this->DownloadBtn->UseVisualStyleBackColor = true;
+			this->DownloadBtn->Click += gcnew System::EventHandler(this, &MainPage::DownloadBtn_Click);
+			// 
+			// label5
+			// 
+			resources->ApplyResources(this->label5, L"label5");
+			this->label5->Name = L"label5";
+			// 
+			// playableState
+			// 
+			resources->ApplyResources(this->playableState, L"playableState");
+			this->playableState->Name = L"playableState";
 			// 
 			// MainPage
 			// 
 			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->Controls->Add(this->playableState);
+			this->Controls->Add(this->label5);
 			this->Controls->Add(this->DownloadBtn);
 			this->Controls->Add(this->ExitBtn);
 			this->Controls->Add(this->VersionComboBox);
@@ -558,6 +594,21 @@ namespace sparrdremdownloader {
 					return;
 				}
 			}
+			if (this->ProjectComboBox->Text == "Gossamer Launcher (-= Pre-release =-)")
+			{
+				if (this->VersionComboBox->Text == "v0.9.44.227b")
+				{
+					this->ArchComboBox->Items->Add("x64");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "v0.9.44.227")
+				{
+					this->ArchComboBox->Items->Add("x64");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+			}
 		}
 		private: System::Void ArchComboBox_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 			if (this->LanguageComboBox->Enabled == true)
@@ -757,6 +808,29 @@ namespace sparrdremdownloader {
 		}
 		private: System::Void LanguageComboBox_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 			this->DownloadBtn->Enabled = true;
+		}
+		private: System::Void DownloadBtn_Click(System::Object^ sender, System::EventArgs^ e) {
+			if (this->ProjectComboBox->Text == "casmOS (-= Pre-release =-)")
+			{
+				if (this->VersionComboBox->Text == "v0.0.2.6-alpha")
+				{
+					if (this->ArchComboBox->Text == "x86_64")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadCasmOS_v0026alpha_x8664_english;
+							
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+					}
+				}
+			}
 		}
 	};
 }
