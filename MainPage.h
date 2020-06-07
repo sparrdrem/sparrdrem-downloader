@@ -821,8 +821,26 @@ namespace sparrdremdownloader {
 							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
-							DownloadDb::DownloadCasmOS_v0026alpha_x8664_english;
+							DownloadDb::DownloadCasmOS_v0026alpha_x8664_english();
 							
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.0.2-alpha")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadCasmOS_v002alpha_x86_english();
+
 							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
