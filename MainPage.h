@@ -317,7 +317,10 @@ namespace sparrdremdownloader {
 			}
 			if (this->ProjectComboBox->Text == "LALO (-= Archived =-)")
 			{
-				this->VersionComboBox->Items->Add("v0.0.0.2");
+				this->VersionComboBox->Items->Add("v0.0.0.2 (Windows)");
+				this->VersionComboBox->Items->Add("v0.0.0.2 (Windows) (Bin)");
+				this->VersionComboBox->Items->Add("v0.0.0.2 (Linux)");
+				this->VersionComboBox->Items->Add("v0.0.0.2 (Linux) (Bin)");
 				this->VersionComboBox->Enabled = true;
 				return;
 			}
@@ -380,7 +383,6 @@ namespace sparrdremdownloader {
 				return;
 			}
 		}
-
 		private: System::Void VersionComboBox_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 			if (this->ArchComboBox->Enabled == true)
 			{
@@ -509,7 +511,7 @@ namespace sparrdremdownloader {
 					this->ArchComboBox->Enabled = true;
 					return;
 				}
-				if (this->VersionComboBox->Text == "v0.5-Debug (GenCMD Only)")
+				if (this->VersionComboBox->Text == "v0.5-Debug (Bin)")
 				{
 					this->ArchComboBox->Items->Add("x86");
 					this->ArchComboBox->Enabled = true;
@@ -605,6 +607,213 @@ namespace sparrdremdownloader {
 				if (this->VersionComboBox->Text == "v0.9.44.227")
 				{
 					this->ArchComboBox->Items->Add("x64");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+			}
+			if (this->ProjectComboBox->Text == "HOSTNAME")
+			{
+				if (this->VersionComboBox->Text == "v0.1 (Windows)")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "v0.1 (Linux)")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+			}
+			if (this->ProjectComboBox->Text == "LALO (-= Archived =-)")
+			{
+				if (this->VersionComboBox->Text == "v0.0.0.2 (Windows)")
+				{
+					this->ArchComboBox->Items->Add("x64");
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "v0.0.0.2 (Windows) (Bin)")
+				{
+					this->ArchComboBox->Items->Add("x64");
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "v0.0.0.2 (Linux)")
+				{
+					this->ArchComboBox->Items->Add("x86/64");
+					this->ArchComboBox->Items->Add("x64");
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "v0.0.0.2 (Linux) (Bin)")
+				{
+					this->ArchComboBox->Items->Add("x64");
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+			}
+			if (this->ProjectComboBox->Text == "OTN")
+			{
+				if (this->VersionComboBox->Text == "v0.1.1 (Server)")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "v0.1.1 (Client)")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "v0.1.0")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "v0.0.8")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "v0.0.7")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "v0.0.6")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "v0.0.5")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "v0.0.4")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "v0.0.3")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "v0.0.2")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "v0.0.1 (Warning: Very Unstable)")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+			}
+			// Repos up for deletion
+			/*if (this->ProjectComboBox->Text == "OTNMCP (-= Pre-release =-)")
+			{
+				if (this->VersionComboBox->Text == "v0.0.1.88-chrome")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+			}*/
+			if (this->ProjectComboBox->Text == "Sam&Yoe Group: The Video Game")
+			{
+				if (this->VersionComboBox->Text == "Build #0040 (Special Edition)")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "Build #0030 (Not yet available)")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "Build #0020 (Not yet available)")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "Build #0010 (Not yet available)")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+			}
+			if (this->ProjectComboBox->Text == "SparrOS (-= Pre-release =-)")
+			{
+				if (this->VersionComboBox->Text == "v0.0.2-alpha")
+				{
+					this->ArchComboBox->Items->Add("x64");
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Items->Add("armv7 (Cortex A7) for Raspberry Pi 2/3/4 \(ARMHF\)");
+					this->ArchComboBox->Items->Add("armv6 (arm1176jzf) for Raspberry Pi 1/zero \(ARMEL\)");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "v0.0.1-alpha")
+				{
+					this->ArchComboBox->Items->Add("x64");
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Items->Add("armv7 (Cortex A53) for Raspberry Pi 3/4 \(ARMHF\)");
+					this->ArchComboBox->Items->Add("armv6 (arm1176jzf) for Raspberry Pi 1/zero \(ARMEL\)");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+			}
+			if (this->ProjectComboBox->Text == "UPTIME (-= Pre-release =-)")
+			{
+				if (this->VersionComboBox->Text == "v1.0.284-beta")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+			}
+			if (this->ProjectComboBox->Text == "Windows 9 Downloader (Windows 10 TP Build 9841)")
+			{
+				if (this->VersionComboBox->Text == "v0.4")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+			}
+			if (this->ProjectComboBox->Text == "Yoe's Cheat Database (-= Pre-release =-)")
+			{
+				if (this->VersionComboBox->Text == "v0.2")
+				{
+					this->ArchComboBox->Items->Add("ARM");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "v0.1")
+				{
+					this->ArchComboBox->Items->Add("ARM");
 					this->ArchComboBox->Enabled = true;
 					return;
 				}
@@ -737,69 +946,104 @@ namespace sparrdremdownloader {
 				}
 				if (this->VersionComboBox->Text == "v0.4-Preview (Bin)")
 				{
-					this->ArchComboBox->Items->Add("x86");
-					this->ArchComboBox->Enabled = true;
-					return;
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Items->Add("Spanish");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
 				}
 				if (this->VersionComboBox->Text == "v0.4-Preview (GenCMD Only)")
 				{
-					this->ArchComboBox->Items->Add("x86");
-					this->ArchComboBox->Enabled = true;
-					return;
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Items->Add("Spanish");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
 				}
 				if (this->VersionComboBox->Text == "v0.3-Preview")
 				{
-					this->ArchComboBox->Items->Add("x86");
-					this->ArchComboBox->Enabled = true;
-					return;
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
 				}
 				if (this->VersionComboBox->Text == "v0.3-Preview (Bin)")
 				{
-					this->ArchComboBox->Items->Add("x86");
-					this->ArchComboBox->Enabled = true;
-					return;
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
 				}
 				if (this->VersionComboBox->Text == "v0.3-Preview (GenCMD Only)")
 				{
-					this->ArchComboBox->Items->Add("x86");
-					this->ArchComboBox->Enabled = true;
-					return;
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
 				}
 				if (this->VersionComboBox->Text == "v0.2-Preview")
 				{
-					this->ArchComboBox->Items->Add("x86");
-					this->ArchComboBox->Enabled = true;
-					return;
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
 				}
 				if (this->VersionComboBox->Text == "v0.2-Preview (Bin)")
 				{
-					this->ArchComboBox->Items->Add("x86");
-					this->ArchComboBox->Enabled = true;
-					return;
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
 				}
 				if (this->VersionComboBox->Text == "v0.2-Preview (GenCMD Only)")
 				{
-					this->ArchComboBox->Items->Add("x86");
-					this->ArchComboBox->Enabled = true;
-					return;
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
 				}
 				if (this->VersionComboBox->Text == "v0.1b-Preview (GenCMD Only)")
 				{
-					this->ArchComboBox->Items->Add("x86");
-					this->ArchComboBox->Enabled = true;
-					return;
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
 				}
 				if (this->VersionComboBox->Text == "v0.1-Preview")
 				{
-					this->ArchComboBox->Items->Add("x86");
-					this->ArchComboBox->Enabled = true;
-					return;
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
 				}
 				if (this->VersionComboBox->Text == "v0.1-Preview (Bin)")
 				{
-					this->ArchComboBox->Items->Add("x86");
-					this->ArchComboBox->Enabled = true;
-					return;
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
 				}
 			}
 		}
@@ -846,6 +1090,36 @@ namespace sparrdremdownloader {
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
 						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.0.1-alpha")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->playableState->Text = "Downloading file .... please wait.";
+						this->DownloadBtn->Enabled = false;
+
+						DownloadDb::DownloadCasmOS_v001alpha_x86_english();
+
+						this->playableState->Text = "Ready.";
+						this->DownloadBtn->Enabled = true;
+						Process::Start("explorer.exe", Application::StartupPath);
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.0.0-alpha")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->playableState->Text = "Downloading file .... please wait.";
+						this->DownloadBtn->Enabled = false;
+
+						DownloadDb::DownloadCasmOS_v000alpha_x86_english();
+
+						this->playableState->Text = "Ready.";
+						this->DownloadBtn->Enabled = true;
+						Process::Start("explorer.exe", Application::StartupPath);
+						return;
 					}
 				}
 			}

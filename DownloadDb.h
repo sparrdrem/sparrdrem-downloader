@@ -284,6 +284,34 @@ namespace sparrdremdownloader {
 		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
 		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
+	public: static void DownloadGencode_v05debug_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/gencode/releases/download/v0.5-dbg/";
+		String^ fileName = "gencode_v0.5-setup-dbg.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadGencode_v05debugbin_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/gencode/releases/download/v0.5-dbg/";
+		String^ fileName = "gencode_v0.5-bin-dbg.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
 	public: static void DownloadGencode_v04legacy_x86_english()
 	{
 		String^ remoteUri = "https://github.com/sparrdrem/gencode/releases/download/v0.4-legacy/";
@@ -372,6 +400,146 @@ namespace sparrdremdownloader {
 	{
 		String^ remoteUri = "https://github.com/SparrOSInternational/gencode-es/releases/download/v0.4-preview/";
 		String^ fileName = "gencmd_v0.4-bin-es.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadGencode_v04preview_x86_multilanguage()
+	{
+		String^ remoteUri = "https://github.com/SparrOSInternational/gencode-mu/releases/download/v0.4-preview/";
+		String^ fileName = "gencode_v0.4-setup-mu.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadGencode_v03preview_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/gencode/releases/download/v0.3-preview/";
+		String^ fileName = "gencode_v0.3-setup.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadGencode_v03previewbin_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/gencode/releases/download/v0.3-preview/";
+		String^ fileName = "gencode_v0.3-bin.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadGencode_v03previewgencmdonly_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/gencode/releases/download/v0.3-preview/";
+		String^ fileName = "gencmd_v0.3-bin.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadGencode_v02preview_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/gencode/releases/download/v0.2-preview/";
+		String^ fileName = "gencode_v0.2-setup.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadGencode_v02previewbin_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/gencode/releases/download/v0.2-preview/";
+		String^ fileName = "gencode_v0.2-bin.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadGencode_v02previewgencmdonly_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/gencode/releases/download/v0.2-preview/";
+		String^ fileName = "gencmd_v0.2-bin.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadGencode_v01bpreviewgencmdonly_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/gencode/releases/download/v0.1b-preview/";
+		String^ fileName = "gencmd_v0.1b-bin.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadGencode_v01preview_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/gencode/releases/download/v0.1-preview/";
+		String^ fileName = "gencode_v0.1-setup.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadGencode_v01previewbin_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/gencode/releases/download/v0.1-preview/";
+		String^ fileName = "gencode_v0.1-bin.zip", ^ myStringWebResource = nullptr;
 
 		WebClient^ wcdl = gcnew WebClient;
 
