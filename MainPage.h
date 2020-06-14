@@ -284,7 +284,7 @@ namespace sparrdremdownloader {
 				this->VersionComboBox->Items->Add("v0.5-Preview (Bin)");
 				this->VersionComboBox->Items->Add("v0.5-Preview (GenCMD Only)");
 				this->VersionComboBox->Items->Add("v0.5-Debug");
-				this->VersionComboBox->Items->Add("v0.5-Debug (GenCMD Only)");
+				this->VersionComboBox->Items->Add("v0.5-Debug (Bin)");
 				this->VersionComboBox->Items->Add("v0.4-Legacy");
 				this->VersionComboBox->Items->Add("v0.4-Preview");
 				this->VersionComboBox->Items->Add("v0.4-Preview (Bin)");
@@ -868,6 +868,60 @@ namespace sparrdremdownloader {
 					}
 				}
 			}
+			if (this->ProjectComboBox->Text == "Commodore OS Vision II")
+			{
+				if (this->VersionComboBox->Text == "Build 3200")
+				{
+					if (this->ArchComboBox->Text == "x64")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+			}
+			if (this->ProjectComboBox->Text == "DremDOS (-= Pre-release =-)")
+			{
+				if (this->VersionComboBox->Text == "v0.0.1")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.0.1-rc1")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.0.1 (04-08-2020 Prototype)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+			}
+			if (this->ProjectComboBox->Text == "DremOS")
+			{
+				if (this->VersionComboBox->Text == "v0.6.0")
+				{
+					if (this->ArchComboBox->Text == "x64")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+			}
 			if (this->ProjectComboBox->Text == "Gencode (-= Pre-release =-)")
 			{
 				if (this->VersionComboBox->Text == "v0.5-Preview (Plus Edition)")
@@ -915,7 +969,7 @@ namespace sparrdremdownloader {
 						return;
 					}
 				}
-				if (this->VersionComboBox->Text == "v0.5-Debug (GenCMD Only)")
+				if (this->VersionComboBox->Text == "v0.5-Debug (Bin)")
 				{
 					if (this->ArchComboBox->Text == "x86")
 					{
@@ -1046,6 +1100,373 @@ namespace sparrdremdownloader {
 					}
 				}
 			}
+			if (this->ProjectComboBox->Text == "Gossamer Launcher (-= Pre-release =-)")
+			{
+				if (this->VersionComboBox->Text == "v0.9.44.227b")
+				{
+					if (this->ArchComboBox->Text == "x64")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.9.44.227")
+				{
+					if (this->ArchComboBox->Text == "x64")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+			}
+			if (this->ProjectComboBox->Text == "HOSTNAME")
+			{
+				if (this->VersionComboBox->Text == "v0.1 (Windows)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.1 (Linux)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+			}
+			if (this->ProjectComboBox->Text == "LALO (-= Archived =-)")
+			{
+				if (this->VersionComboBox->Text == "v0.0.0.2 (Windows)")
+				{
+					if (this->ArchComboBox->Text == "x64")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.0.0.2 (Windows) (Bin)")
+				{
+					if (this->ArchComboBox->Text == "x64")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.0.0.2 (Linux)")
+				{
+					if (this->ArchComboBox->Text == "x86/64")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+					if (this->ArchComboBox->Text == "x64")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.0.0.2 (Linux) (Bin)")
+				{
+					if (this->ArchComboBox->Text == "x64")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+			}
+			if (this->ProjectComboBox->Text == "OTN")
+			{
+				if (this->VersionComboBox->Text == "v0.1.1 (Server)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.1.1 (Client)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.1.0")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.0.8")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.0.7")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.0.6")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.0.5")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.0.4")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.0.3")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.0.2")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.0.1 (Warning: Very Unstable)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+			}
+			// Repos up for deletion
+			/*if (this->ProjectComboBox->Text == "OTNMCP (-= Pre-release =-)")
+			{
+				if (this->VersionComboBox->Text == "v0.0.1.88-chrome")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+			}*/
+			if (this->ProjectComboBox->Text == "Sam&Yoe Group: The Video Game")
+			{
+				if (this->VersionComboBox->Text == "Build #0040 (Special Edition)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "Build #0030 (Not yet available)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "Build #0020 (Not yet available)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "Build #0010 (Not yet available)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+			}
+			if (this->ProjectComboBox->Text == "SparrOS (-= Pre-release =-)")
+			{
+				if (this->VersionComboBox->Text == "v0.0.2-alpha")
+				{
+					if (this->ArchComboBox->Text == "x64")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+					if (this->ArchComboBox->Text == "armv7 (Cortex A7) for Raspberry Pi 2/3/4 \(ARMHF\)")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+					if (this->ArchComboBox->Text == "armv6 (arm1176jzf) for Raspberry Pi 1/zero \(ARMEL\)")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.0.1-alpha")
+				{
+					if (this->ArchComboBox->Text == "x64")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+					if (this->ArchComboBox->Text == "armv7 (Cortex A53) for Raspberry Pi 3/4 \(ARMHF\)")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+					if (this->ArchComboBox->Text == "armv6 (arm1176jzf) for Raspberry Pi 1/zero \(ARMEL\)")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+			}
+			if (this->ProjectComboBox->Text == "UPTIME (-= Pre-release =-)")
+			{
+				if (this->VersionComboBox->Text == "v1.0.284-beta")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+			}
+			if (this->ProjectComboBox->Text == "Windows 9 Downloader (Windows 10 TP Build 9841)")
+			{
+				if (this->VersionComboBox->Text == "v0.4")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+			}
+			if (this->ProjectComboBox->Text == "Yoe's Cheat Database (-= Pre-release =-)")
+			{
+				if (this->VersionComboBox->Text == "v0.2")
+				{
+					if (this->ArchComboBox->Text == "ARM")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.1")
+				{
+					if (this->ArchComboBox->Text == "ARM")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+			}
 		}
 		private: System::Void ExitBtn_Click(System::Object^ sender, System::EventArgs^ e) {
 			Application::Exit();
@@ -1120,6 +1541,399 @@ namespace sparrdremdownloader {
 						this->DownloadBtn->Enabled = true;
 						Process::Start("explorer.exe", Application::StartupPath);
 						return;
+					}
+				}
+			}
+			if (this->ProjectComboBox->Text == "Gencode (-= Pre-release =-)")
+			{
+				if (this->VersionComboBox->Text == "v0.5-Preview (Plus Edition)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v05plus_x86_english();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.5-Preview")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v05preview_x86_english();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.5-Preview (Bin)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v05previewbin_x86_english();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.5-Preview (GenCMD Only)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v05previewgencmdonly_x86_english();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.5-Debug")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v05debug_x86_english();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.5-Debug (Bin)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v05debugbin_x86_english();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.4-Legacy")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v04legacy_x86_english();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.4-Preview")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v04preview_x86_english();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+						if (this->LanguageComboBox->Text == "Multilanguage")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+							
+							DownloadDb::DownloadGencode_v04preview_x86_multilanguage();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+						if (this->LanguageComboBox->Text == "Spanish")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v04preview_x86_spanish();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.4-Preview (Bin)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v04previewbin_x86_english();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+						if (this->LanguageComboBox->Text == "Spanish")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v04previewbin_x86_spanish();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.4-Preview (GenCMD Only)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v04previewgencmdonly_x86_english();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+						if (this->LanguageComboBox->Text == "Spanish")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v04previewgencmdonly_x86_spanish();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.3-Preview")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v03preview_x86_english();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.3-Preview (Bin)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v03previewbin_x86_english();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.3-Preview (GenCMD Only)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v03previewgencmdonly_x86_english();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.2-Preview")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v02preview_x86_english();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.2-Preview (Bin)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v02previewbin_x86_english();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.2-Preview (GenCMD Only)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v02previewgencmdonly_x86_english();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.1b-Preview (GenCMD Only)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v01bpreviewgencmdonly_x86_english();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.1-Preview")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v01preview_x86_english();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.1-Preview (Bin)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						if (this->LanguageComboBox->Text == "English")
+						{
+							this->playableState->Text = "Downloading file .... please wait.";
+							this->DownloadBtn->Enabled = false;
+
+							DownloadDb::DownloadGencode_v01previewbin_x86_english();
+
+							this->playableState->Text = "Ready.";
+							this->DownloadBtn->Enabled = true;
+							Process::Start("explorer.exe", Application::StartupPath);
+							return;
+						}
 					}
 				}
 			}

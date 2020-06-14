@@ -18,20 +18,20 @@ namespace sparrdremdownloader {
 
 	class DownloadDb
 	{
-		public: static void DownloadCasmOS_v0026alpha_x8664_english()
-		{
-			String^ remoteUri = "https://github.com/sparrdrem/casmOS/releases/download/v0.0.2.6-alpha/";
-			String^ fileName = "casmos-x86_64_0.0.2.6-alpha.iso", ^ myStringWebResource = nullptr;
+	public: static void DownloadCasmOS_v0026alpha_x8664_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/casmOS/releases/download/v0.0.2.6-alpha/";
+		String^ fileName = "casmos-x86_64_0.0.2.6-alpha.iso", ^ myStringWebResource = nullptr;
 
-			WebClient^ wcdl = gcnew WebClient;
+		WebClient^ wcdl = gcnew WebClient;
 
-			myStringWebResource = String::Concat(remoteUri, fileName);
-			Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
 
-			wcdl->DownloadFile(myStringWebResource, fileName);
-			Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-			Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
-		}
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
 	public: static void DownloadCasmOS_v002alpha_x86_english()
 	{
 		String^ remoteUri = "https://github.com/sparrdrem/casmOS/releases/download/v0.0.2-alpha/";
@@ -540,6 +540,272 @@ namespace sparrdremdownloader {
 	{
 		String^ remoteUri = "https://github.com/sparrdrem/gencode/releases/download/v0.1-preview/";
 		String^ fileName = "gencode_v0.1-bin.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadLALO_v0002windows_x64_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/lalo-archive/releases/download/v0.0.0.2-prealpha/";
+		String^ fileName = "lalo-eda_v0.0.0.2_win64_setup.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadLALO_v0002windows_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/lalo-archive/releases/download/v0.0.0.2-prealpha/";
+		String^ fileName = "lalo-eda_v0.0.0.2_win32_setup.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadLALO_v0002windowsbin_x64_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/lalo-archive/releases/download/v0.0.0.2-prealpha/";
+		String^ fileName = "lalo-eda_v0.0.0.2_win64_bin.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadLALO_v0002windowsbin_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/lalo-archive/releases/download/v0.0.0.2-prealpha/";
+		String^ fileName = "lalo-eda_v0.0.0.2_win32_bin.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadLALO_v0002linux_x64_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/lalo-archive/releases/download/v0.0.0.2-prealpha/";
+		String^ fileName = "lalo-eda_v0.0.0.2_unix64_setup.deb", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadLALO_v0002linux_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/lalo-archive/releases/download/v0.0.0.2-prealpha/";
+		String^ fileName = "lalo-eda_v0.0.0.2_unix32_setup.deb", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadLALO_v0002linuxbin_x64_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/lalo-archive/releases/download/v0.0.0.2-prealpha/";
+		String^ fileName = "lalo-eda_v0.0.0.2_unix64_bin.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadLALO_v0002linuxbin_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/lalo-archive/releases/download/v0.0.0.2-prealpha/";
+		String^ fileName = "lalo-eda_v0.0.0.2_unix32_bin.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadOTN_v011server_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/otn/releases/download/0.1.1/";
+		String^ fileName = "otn-server.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadOTN_v011client_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/otn/releases/download/0.1.1/";
+		String^ fileName = "OTNClient.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadOTN_v010_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/otn/releases/download/0.1.0/";
+		String^ fileName = "otn-server.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadOTN_v008_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/otn/releases/download/0.0.8/";
+		String^ fileName = "otn-server.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadOTN_v007_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/otn/releases/download/0.0.7/";
+		String^ fileName = "otn-server.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Agent007 is stealing \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadOTN_v006_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/otn/releases/download/0.0.6/";
+		String^ fileName = "otn-server.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadOTN_v005_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/otn/releases/download/0.0.5/";
+		String^ fileName = "otn-server.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadOTN_v004_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/otn/releases/download/0.0.4/";
+		String^ fileName = "otn-server.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadOTN_v003_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/otn/releases/download/0.0.3/";
+		String^ fileName = "otn-server.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadOTN_v002_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/otn/releases/download/0.0.2/";
+		String^ fileName = "otn-server.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadOTN_v001_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/otn/releases/download/0.0.1/";
+		String^ fileName = "otn-client.exe", ^ myStringWebResource = nullptr;
 
 		WebClient^ wcdl = gcnew WebClient;
 
