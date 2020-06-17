@@ -816,5 +816,250 @@ namespace sparrdremdownloader {
 		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
 		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
+	// Repos up for deletion
+	/*
+		  public: static void DownloadOTNMCP_v00188chrome_none_english()
+		  {
+			  String^ remoteUri = "https://github.com/sparrdrem/otnmcp/releases/download/0.0.1.88-Chrome/";
+			  String^ fileName = "OTNMCP-Chrome.zip", ^ myStringWebResource = nullptr;
+
+			  WebClient^ wcdl = gcnew WebClient;
+
+			  myStringWebResource = String::Concat(remoteUri, fileName);
+			  Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+			  wcdl->DownloadFile(myStringWebResource, fileName);
+			  Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+			  Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+		  }
+		  */
+	public: static void DownloadSYGTVG_v0040discordrp_x86_english()
+	{
+		String^ remoteUri = "https://github.com/SparrOSDeveloperTeam-Win/SYGTVG-REL/releases/download/v0.0040/";
+		String^ fileName = "SYGTVGTEST0040_includes_discordrp.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadSYGTVG_v0040_x86_english()
+	{
+		String^ remoteUri = "https://github.com/SparrOSDeveloperTeam-Win/SYGTVG-REL/releases/download/v0.0040/";
+		String^ fileName = "SYGTVGTEST0040.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadSYGTVG_v0030_x86_english()
+	{
+		// Reserved for the actual download
+	}
+	public: static void DownloadSYGTVG_v0030portededition_none_english()
+	{
+		// Reserved for the actual download
+	}
+	public: static void DownloadSYGTVG_v0020_x86_english()
+	{
+		// Reserved for the actual download
+	}
+	public: static void DownloadSYGTVG_v0020portededition_none_english()
+	{
+		// Reserved for the actual download
+	}
+	public: static void DownloadSYGTVG_v0010_x86_english()
+	{
+		// Reserved for the actual download
+	}
+	public: static void DownloadSparrOS_v002alpha_x64_english()
+	{
+		String^ remoteUri = "https://github.com/SparrOSDeveloperTeam/sparros/releases/download/v0.0.2-alpha/";
+		String^ fileName = "sparros_x64_20200224_alpha_v0.0.2.iso.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadSparrOS_v002alpha_x86_english()
+	{
+		String^ remoteUri = "https://github.com/SparrOSDeveloperTeam/sparros/releases/download/v0.0.2-alpha/";
+		String^ fileName = "sparros_x86_20200224_alpha_v0.0.2.iso.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadSparrOSEmbedded_v002alpha_rpimodern_english()
+	{
+		String^ remoteUri = "https://github.com/SparrOSDeveloperTeam/sparros-pi/releases/download/v0.0.2-alpha/";
+		String^ fileName = "sparros_armhf_20200224_alpha_v0.0.2.img.xz", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadSparrOSEmbedded_v002alpha_rpilegacy_english()
+	{
+		String^ remoteUri = "https://github.com/SparrOSDeveloperTeam/sparros-pi/releases/download/v0.0.2-alpha/";
+		String^ fileName = "sparros_armel_20200224_alpha_v0.0.2.img.xz", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadSparrOS_v001alpha_x64_english()
+	{
+		String^ remoteUri = "https://github.com/SparrOSDeveloperTeam/sparros/releases/download/v0.0.1-alpha/";
+		String^ fileName = "sparros_x64_20200108_alpha_v0.0.1.iso.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadSparrOS_v001alpha_x86_english()
+	{
+		String^ remoteUri = "https://github.com/SparrOSDeveloperTeam/sparros/releases/download/v0.0.1-alpha/";
+		String^ fileName = "sparros_x86_20200108_alpha_v0.0.1.iso.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadSparrOSEmbedded_v001alpha_rpimodern_english()
+	{
+		String^ remoteUri = "https://github.com/SparrOSDeveloperTeam/sparros-pi/releases/download/v0.0.1-alpha/";
+		String^ fileName = "sparros_armhf_20200108_alpha_v0.0.1.img.xz", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadSparrOSEmbedded_v001alpha_rpilegacy_english()
+	{
+		String^ remoteUri = "https://github.com/SparrOSDeveloperTeam/sparros-pi/releases/download/v0.0.1-alpha/";
+		String^ fileName = "sparros_armel_20200108_alpha_v0.0.1.img.xz", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadUPTIME_v10284beta_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/uptime/releases/download/v1.0.284-beta/";
+		String^ fileName = "uptime_v1.0-setup-beta.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadUPTIME_v10284betabin_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/uptime/releases/download/v1.0.284-beta/";
+		String^ fileName = "uptime_v1.0-bin-beta.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadUPTIME_v10284betalegacy_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/uptime/releases/download/v1.0.284-beta/";
+		String^ fileName = "uptime_v1.0-setup-beta-legacy.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadUPTIME_v10284betalegacybin_x86_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/uptime/releases/download/v1.0.284-beta/";
+		String^ fileName = "uptime_v1.0-bin-beta-legacy.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadWindows9Downloader_v04_x86_english()
+	{
+		// Reserved for now
+	}
+	public: static void DownloadYoesCheatDatabase_v02_arm_english()
+	{
+		// Reserved for now
+	}
+	public: static void DownloadYoesCheatDatabase_v01_arm_english()
+	{
+		// Reserved for now
+	}
 	};
 }

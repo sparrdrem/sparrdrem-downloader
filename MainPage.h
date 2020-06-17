@@ -16,6 +16,7 @@ using namespace std;
 */
 
 #include "DownloadDb.h"
+#include "About.h"
 
 namespace sparrdremdownloader {
 
@@ -67,6 +68,7 @@ namespace sparrdremdownloader {
 	private: System::Windows::Forms::Button^ DownloadBtn;
 	private: System::Windows::Forms::Label^ label5;
 	private: System::Windows::Forms::Label^ playableState;
+	private: System::Windows::Forms::LinkLabel^ linkLabel1;
 
 
 	private:
@@ -95,6 +97,7 @@ namespace sparrdremdownloader {
 			this->DownloadBtn = (gcnew System::Windows::Forms::Button());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->playableState = (gcnew System::Windows::Forms::Label());
+			this->linkLabel1 = (gcnew System::Windows::Forms::LinkLabel());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -181,10 +184,18 @@ namespace sparrdremdownloader {
 			resources->ApplyResources(this->playableState, L"playableState");
 			this->playableState->Name = L"playableState";
 			// 
+			// linkLabel1
+			// 
+			resources->ApplyResources(this->linkLabel1, L"linkLabel1");
+			this->linkLabel1->Name = L"linkLabel1";
+			this->linkLabel1->TabStop = true;
+			this->linkLabel1->LinkClicked += gcnew System::Windows::Forms::LinkLabelLinkClickedEventHandler(this, &MainPage::linkLabel1_LinkClicked);
+			// 
 			// MainPage
 			// 
 			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->Controls->Add(this->linkLabel1);
 			this->Controls->Add(this->playableState);
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->DownloadBtn);
@@ -349,9 +360,12 @@ namespace sparrdremdownloader {
 			}*/
 			if (this->ProjectComboBox->Text == "Sam&Yoe Group: The Video Game")
 			{
+				this->VersionComboBox->Items->Add("Build #0040 (Discord Rich-Presence Included) (Special Edition)");
 				this->VersionComboBox->Items->Add("Build #0040 (Special Edition)");
 				this->VersionComboBox->Items->Add("Build #0030 (Not yet available)");
+				this->VersionComboBox->Items->Add("Build #0030 (Ported Edition) (Not yet available)");
 				this->VersionComboBox->Items->Add("Build #0020 (Not yet available)");
+				this->VersionComboBox->Items->Add("Build #0020 (Ported Edition) (Not yet available)");
 				this->VersionComboBox->Items->Add("Build #0010 (Not yet available)");
 				this->VersionComboBox->Enabled = true;
 				return;
@@ -366,6 +380,9 @@ namespace sparrdremdownloader {
 			if (this->ProjectComboBox->Text == "UPTIME (-= Pre-release =-)")
 			{
 				this->VersionComboBox->Items->Add("v1.0.284-beta");
+				this->VersionComboBox->Items->Add("v1.0.284-beta (Bin)");
+				this->VersionComboBox->Items->Add("v1.0.284-beta (Legacy)");
+				this->VersionComboBox->Items->Add("v1.0.284-beta (Legacy) (Bin)");
 				this->VersionComboBox->Enabled = true;
 				return;
 			}
@@ -739,6 +756,12 @@ namespace sparrdremdownloader {
 			}*/
 			if (this->ProjectComboBox->Text == "Sam&Yoe Group: The Video Game")
 			{
+				if (this->VersionComboBox->Text == "Build #0040 (Discord Rich-Presence Included) (Special Edition)")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
 				if (this->VersionComboBox->Text == "Build #0040 (Special Edition)")
 				{
 					this->ArchComboBox->Items->Add("x86");
@@ -751,9 +774,21 @@ namespace sparrdremdownloader {
 					this->ArchComboBox->Enabled = true;
 					return;
 				}
+				if (this->VersionComboBox->Text == "Build #0030 (Ported Edition) (Not yet available)")
+				{
+					this->ArchComboBox->Items->Add("None");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
 				if (this->VersionComboBox->Text == "Build #0020 (Not yet available)")
 				{
 					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "Build #0020 (Ported Edition) (Not yet available)")
+				{
+					this->ArchComboBox->Items->Add("None");
 					this->ArchComboBox->Enabled = true;
 					return;
 				}
@@ -770,6 +805,7 @@ namespace sparrdremdownloader {
 				{
 					this->ArchComboBox->Items->Add("x64");
 					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Items->Add("x86 (VMWare Bootable Hard Disk Image)");
 					this->ArchComboBox->Items->Add("armv7 (Cortex A7) for Raspberry Pi 2/3/4 \(ARMHF\)");
 					this->ArchComboBox->Items->Add("armv6 (arm1176jzf) for Raspberry Pi 1/zero \(ARMEL\)");
 					this->ArchComboBox->Enabled = true;
@@ -788,6 +824,24 @@ namespace sparrdremdownloader {
 			if (this->ProjectComboBox->Text == "UPTIME (-= Pre-release =-)")
 			{
 				if (this->VersionComboBox->Text == "v1.0.284-beta")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "v1.0.284-beta (Bin)")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "v1.0.284-beta (Legacy)")
+				{
+					this->ArchComboBox->Items->Add("x86");
+					this->ArchComboBox->Enabled = true;
+					return;
+				}
+				if (this->VersionComboBox->Text == "v1.0.284-beta (Legacy) (Bin)")
 				{
 					this->ArchComboBox->Items->Add("x86");
 					this->ArchComboBox->Enabled = true;
@@ -1328,6 +1382,15 @@ namespace sparrdremdownloader {
 			}*/
 			if (this->ProjectComboBox->Text == "Sam&Yoe Group: The Video Game")
 			{
+				if (this->VersionComboBox->Text == "Build #0040 (Discord Rich-Presence Included) (Special Edition)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
 				if (this->VersionComboBox->Text == "Build #0040 (Special Edition)")
 				{
 					if (this->ArchComboBox->Text == "x86")
@@ -1346,9 +1409,27 @@ namespace sparrdremdownloader {
 						return;
 					}
 				}
+				if (this->VersionComboBox->Text == "Build #0030 (Ported Edition) (Not yet available)")
+				{
+					if (this->ArchComboBox->Text == "None")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
 				if (this->VersionComboBox->Text == "Build #0020 (Not yet available)")
 				{
 					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "Build #0020 (Ported Edition) (Not yet available)")
+				{
+					if (this->ArchComboBox->Text == "None")
 					{
 						this->LanguageComboBox->Items->Add("English");
 						this->LanguageComboBox->Enabled = true;
@@ -1376,6 +1457,12 @@ namespace sparrdremdownloader {
 						return;
 					}
 					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+					if (this->ArchComboBox->Text == "x86 (VMWare Bootable Hard Disk Image)")
 					{
 						this->LanguageComboBox->Items->Add("English");
 						this->LanguageComboBox->Enabled = true;
@@ -1425,6 +1512,33 @@ namespace sparrdremdownloader {
 			if (this->ProjectComboBox->Text == "UPTIME (-= Pre-release =-)")
 			{
 				if (this->VersionComboBox->Text == "v1.0.284-beta")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v1.0.284-beta (Bin)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v1.0.284-beta (Legacy)")
+				{
+					if (this->ArchComboBox->Text == "x86")
+					{
+						this->LanguageComboBox->Items->Add("English");
+						this->LanguageComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v1.0.284-beta (Legacy) (Bin)")
 				{
 					if (this->ArchComboBox->Text == "x86")
 					{
@@ -1937,6 +2051,11 @@ namespace sparrdremdownloader {
 					}
 				}
 			}
+		}
+		private: System::Void linkLabel1_LinkClicked(System::Object^ sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^ e)
+		{
+			About^ abt = gcnew About;
+			abt->Show();
 		}
 	};
 }
