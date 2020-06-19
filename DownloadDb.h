@@ -550,6 +550,62 @@ namespace sparrdremdownloader {
 		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
 		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
+	public: static void DownloadGossamerLauncher_v0944227b_x64_english()
+	{
+		String^ remoteUri = "https://github.com/pjgossamer/gossamer-launcher/raw/master/";
+		String^ fileName = "gossamer-launcher_0.9.44.227b_x64_win.zip.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadGossamerLauncher_v0944227_x64_english()
+	{
+		String^ remoteUri = "https://github.com/pjgossamer/gossamer-launcher/raw/master/";
+		String^ fileName = "gossamer-launcher_0.9.44.227_x64_win.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadHostname_v01windows_x86_english()
+	{
+		String^ remoteUri = "https://github.com/pjgossamer/hostname/releases/download/v0.1/";
+		String^ fileName = "hostname_win.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadHostname_v01linux_x86_english()
+	{
+		String^ remoteUri = "https://github.com/pjgossamer/hostname/releases/download/v0.1/";
+		String^ fileName = "hostname_linux.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
 	public: static void DownloadLALO_v0002windows_x64_english()
 	{
 		String^ remoteUri = "https://github.com/sparrdrem/lalo-archive/releases/download/v0.0.0.2-prealpha/";
@@ -596,6 +652,20 @@ namespace sparrdremdownloader {
 	{
 		String^ remoteUri = "https://github.com/sparrdrem/lalo-archive/releases/download/v0.0.0.2-prealpha/";
 		String^ fileName = "lalo-eda_v0.0.0.2_win32_bin.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
+	public: static void DownloadLALO_v0002linux_all_english()
+	{
+		String^ remoteUri = "https://github.com/sparrdrem/lalo-archive/releases/download/v0.0.0.2-prealpha/";
+		String^ fileName = "lalo-eda_0.0.2-0_all.deb", ^ myStringWebResource = nullptr;
 
 		WebClient^ wcdl = gcnew WebClient;
 
@@ -909,6 +979,20 @@ namespace sparrdremdownloader {
 		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
 		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
+	public: static void DownloadSparrOS_v002alphavmdk_x86_english()
+	{
+		String^ remoteUri = "https://github.com/SparrOSDeveloperTeam/sparros/releases/download/v0.0.2-alpha/";
+		String^ fileName = "sparros_x86_20200224_alpha_v0.0.2.vmdk.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
+	}
 	public: static void DownloadSparrOSEmbedded_v002alpha_rpimodern_english()
 	{
 		String^ remoteUri = "https://github.com/SparrOSDeveloperTeam/sparros-pi/releases/download/v0.0.2-alpha/";
@@ -1051,15 +1135,45 @@ namespace sparrdremdownloader {
 	}
 	public: static void DownloadWindows9Downloader_v04_x86_english()
 	{
-		// Reserved for now
+		String^ remoteUri = "https://github.com/sparrdrem/Windows-9-Downloader/releases/download/0.4/";
+		String^ fileName = "Win9-Downloader.exe", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadYoesCheatDatabase_v02_arm_english()
 	{
-		// Reserved for now
+		String^ remoteUri = "https://github.com/SparrOSDeveloperTeam/yoes-nds-cheat-database/releases/download/v0.2/";
+		String^ fileName = "yoes_usercheat-database_current.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadYoesCheatDatabase_v01_arm_english()
 	{
-		// Reserved for now
+		String^ remoteUri = "https://github.com/SparrOSDeveloperTeam/yoes-nds-cheat-database/releases/download/v0.1/";
+		String^ fileName = "usrcheat-old_v0.1.zip", ^ myStringWebResource = nullptr;
+
+		WebClient^ wcdl = gcnew WebClient;
+
+		myStringWebResource = String::Concat(remoteUri, fileName);
+		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
+
+		wcdl->DownloadFile(myStringWebResource, fileName);
+		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
+		Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	};
 }
