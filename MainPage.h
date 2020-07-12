@@ -66,9 +66,13 @@ namespace sparrdremdownloader {
 	private: System::Windows::Forms::ComboBox^ VersionComboBox;
 	private: System::Windows::Forms::Button^ ExitBtn;
 	private: System::Windows::Forms::Button^ DownloadBtn;
-	private: System::Windows::Forms::Label^ label5;
-	private: System::Windows::Forms::Label^ playableState;
+
+
 	private: System::Windows::Forms::LinkLabel^ linkLabel1;
+	private: System::Windows::Forms::Button^ manageBtn;
+	private: System::Windows::Forms::CheckBox^ launchInstallBox;
+
+
 
 
 	private:
@@ -95,9 +99,9 @@ namespace sparrdremdownloader {
 			this->VersionComboBox = (gcnew System::Windows::Forms::ComboBox());
 			this->ExitBtn = (gcnew System::Windows::Forms::Button());
 			this->DownloadBtn = (gcnew System::Windows::Forms::Button());
-			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->playableState = (gcnew System::Windows::Forms::Label());
 			this->linkLabel1 = (gcnew System::Windows::Forms::LinkLabel());
+			this->manageBtn = (gcnew System::Windows::Forms::Button());
+			this->launchInstallBox = (gcnew System::Windows::Forms::CheckBox());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -174,16 +178,6 @@ namespace sparrdremdownloader {
 			this->DownloadBtn->UseVisualStyleBackColor = true;
 			this->DownloadBtn->Click += gcnew System::EventHandler(this, &MainPage::DownloadBtn_Click);
 			// 
-			// label5
-			// 
-			resources->ApplyResources(this->label5, L"label5");
-			this->label5->Name = L"label5";
-			// 
-			// playableState
-			// 
-			resources->ApplyResources(this->playableState, L"playableState");
-			this->playableState->Name = L"playableState";
-			// 
 			// linkLabel1
 			// 
 			resources->ApplyResources(this->linkLabel1, L"linkLabel1");
@@ -191,13 +185,25 @@ namespace sparrdremdownloader {
 			this->linkLabel1->TabStop = true;
 			this->linkLabel1->LinkClicked += gcnew System::Windows::Forms::LinkLabelLinkClickedEventHandler(this, &MainPage::linkLabel1_LinkClicked);
 			// 
+			// manageBtn
+			// 
+			resources->ApplyResources(this->manageBtn, L"manageBtn");
+			this->manageBtn->Name = L"manageBtn";
+			this->manageBtn->UseVisualStyleBackColor = true;
+			// 
+			// launchInstallBox
+			// 
+			resources->ApplyResources(this->launchInstallBox, L"launchInstallBox");
+			this->launchInstallBox->Name = L"launchInstallBox";
+			this->launchInstallBox->UseVisualStyleBackColor = true;
+			// 
 			// MainPage
 			// 
 			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->Controls->Add(this->launchInstallBox);
+			this->Controls->Add(this->manageBtn);
 			this->Controls->Add(this->linkLabel1);
-			this->Controls->Add(this->playableState);
-			this->Controls->Add(this->label5);
 			this->Controls->Add(this->DownloadBtn);
 			this->Controls->Add(this->ExitBtn);
 			this->Controls->Add(this->VersionComboBox);
@@ -1618,12 +1624,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadCasmOS_v0026alpha_x8664_english();
 							
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -1636,12 +1640,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadCasmOS_v002alpha_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -1652,12 +1654,10 @@ namespace sparrdremdownloader {
 				{
 					if (this->ArchComboBox->Text == "x86")
 					{
-						this->playableState->Text = "Downloading file .... please wait.";
 						this->DownloadBtn->Enabled = false;
 
 						DownloadDb::DownloadCasmOS_v001alpha_x86_english();
 
-						this->playableState->Text = "Ready.";
 						this->DownloadBtn->Enabled = true;
 						Process::Start("explorer.exe", Application::StartupPath);
 						return;
@@ -1667,12 +1667,10 @@ namespace sparrdremdownloader {
 				{
 					if (this->ArchComboBox->Text == "x86")
 					{
-						this->playableState->Text = "Downloading file .... please wait.";
 						this->DownloadBtn->Enabled = false;
 
 						DownloadDb::DownloadCasmOS_v000alpha_x86_english();
 
-						this->playableState->Text = "Ready.";
 						this->DownloadBtn->Enabled = true;
 						Process::Start("explorer.exe", Application::StartupPath);
 						return;
@@ -1687,12 +1685,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadCdosk_v001_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -1705,12 +1701,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadCdosk_v001prototype04092020_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -1726,12 +1720,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadCommodoreOSVisionII_b3200_x64_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -1747,12 +1739,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadDremDOS_v001_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -1765,12 +1755,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadDremDOS_v001rc1_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -1783,12 +1771,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadDremDOS_v001prototype04082020_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -1804,12 +1790,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadDremOS_v060_x64_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -1825,12 +1809,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v05plus_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -1843,12 +1825,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v05preview_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -1861,12 +1841,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v05previewbin_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -1879,12 +1857,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v05previewgencmdonly_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -1897,12 +1873,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v05debug_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -1915,12 +1889,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v05debugbin_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -1933,12 +1905,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v04legacy_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -1951,36 +1921,30 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v04preview_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
 						}
 						if (this->LanguageComboBox->Text == "Multilanguage")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 							
 							DownloadDb::DownloadGencode_v04preview_x86_multilanguage();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
 						}
 						if (this->LanguageComboBox->Text == "Spanish")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v04preview_x86_spanish();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -1993,24 +1957,20 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v04previewbin_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
 						}
 						if (this->LanguageComboBox->Text == "Spanish")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v04previewbin_x86_spanish();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2023,24 +1983,20 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v04previewgencmdonly_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
 						}
 						if (this->LanguageComboBox->Text == "Spanish")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v04previewgencmdonly_x86_spanish();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2053,12 +2009,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v03preview_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2071,12 +2025,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v03previewbin_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2089,12 +2041,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v03previewgencmdonly_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2107,12 +2057,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v02preview_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2125,12 +2073,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v02previewbin_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2143,12 +2089,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v02previewgencmdonly_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2161,12 +2105,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v01bpreviewgencmdonly_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2179,12 +2121,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v01preview_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2197,12 +2137,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGencode_v01previewbin_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2218,12 +2156,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGossamerLauncher_v0944227b_x64_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2236,12 +2172,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadGossamerLauncher_v0944227_x64_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2257,12 +2191,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadHostname_v01windows_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2275,12 +2207,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadHostname_v01linux_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2296,12 +2226,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadLALO_v0002windows_x64_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2311,12 +2239,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadLALO_v0002windows_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2329,12 +2255,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadLALO_v0002windowsbin_x64_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2344,12 +2268,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadLALO_v0002windowsbin_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2362,12 +2284,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadLALO_v0002linux_all_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2377,12 +2297,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadLALO_v0002linux_x64_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2392,12 +2310,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadLALO_v0002linux_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2410,12 +2326,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadLALO_v0002linuxbin_x64_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2425,12 +2339,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadLALO_v0002linuxbin_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2446,12 +2358,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadOTN_v011server_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2464,12 +2374,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadOTN_v011client_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2482,12 +2390,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadOTN_v010_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2500,12 +2406,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadOTN_v008_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2518,12 +2422,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadOTN_v007_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2536,12 +2438,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadOTN_v006_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2554,12 +2454,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadOTN_v005_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2572,12 +2470,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadOTN_v004_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2590,12 +2486,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadOTN_v003_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2608,12 +2502,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadOTN_v002_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2626,12 +2518,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadOTN_v001_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2669,12 +2559,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadSYGTVG_v0040discordrp_x86_english();
-
-							this->playableState->Text = "Ready.";
+							
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2687,12 +2575,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadSYGTVG_v0040_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2758,12 +2644,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadSparrOS_v002alpha_x64_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2773,12 +2657,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadSparrOS_v002alpha_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2788,12 +2670,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadSparrOS_v002alphavmdk_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2803,12 +2683,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadSparrOSEmbedded_v002alpha_rpimodern_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2818,12 +2696,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadSparrOSEmbedded_v002alpha_rpilegacy_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2836,12 +2712,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadSparrOS_v001alpha_x64_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2851,12 +2725,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadSparrOS_v001alpha_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2866,12 +2738,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadSparrOSEmbedded_v001alpha_rpimodern_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2881,12 +2751,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadSparrOSEmbedded_v001alpha_rpilegacy_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2902,12 +2770,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadUPTIME_v10284beta_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2920,12 +2786,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadUPTIME_v10284betabin_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2938,12 +2802,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadUPTIME_v10284betalegacy_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2956,12 +2818,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadUPTIME_v10284betalegacybin_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2977,12 +2837,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadWindows9Downloader_v04_x86_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -2998,12 +2856,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadYoesCheatDatabase_v02_arm_english();
-
-							this->playableState->Text = "Ready.";
+							
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -3016,12 +2872,10 @@ namespace sparrdremdownloader {
 					{
 						if (this->LanguageComboBox->Text == "English")
 						{
-							this->playableState->Text = "Downloading file .... please wait.";
 							this->DownloadBtn->Enabled = false;
 
 							DownloadDb::DownloadYoesCheatDatabase_v01_arm_english();
 
-							this->playableState->Text = "Ready.";
 							this->DownloadBtn->Enabled = true;
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
@@ -3037,8 +2891,3 @@ namespace sparrdremdownloader {
 		}
 	};
 }
-/*
-Discord CDN Downloads:
-DremDOS 0.0.1 (04-08-2020 Prototype): https://cdn.discordapp.com/attachments/555578702713323525/697568127642501150/DremDOS-0.0.1-PROTO1.iso
-CD-OSK 0.0.1 (04-09-2020 Prototype): https://cdn.discordapp.com/attachments/555578702713323525/715354102086893712/cd-osk-proto.7z
-*/

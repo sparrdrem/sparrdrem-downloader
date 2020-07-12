@@ -75,8 +75,24 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <CopyCppRuntimeToOutputDir>true</CopyCppRuntimeToOutputDir>
+    <CopyLocalProjectReference>true</CopyLocalProjectReference>
+    <CopyLocalDebugSymbols>true</CopyLocalDebugSymbols>
+    <CopyLocalDeploymentContent>false</CopyLocalDeploymentContent>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <CopyCppRuntimeToOutputDir>true</CopyCppRuntimeToOutputDir>
+    <CopyLocalProjectReference>true</CopyLocalProjectReference>
+    <CopyLocalDebugSymbols>true</CopyLocalDebugSymbols>
+    <CopyLocalDeploymentContent>false</CopyLocalDeploymentContent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CopyLocalProjectReference>true</CopyLocalProjectReference>
+    <CopyLocalDebugSymbols>true</CopyLocalDebugSymbols>
+    <CopyCppRuntimeToOutputDir>true</CopyCppRuntimeToOutputDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CopyLocalProjectReference>true</CopyLocalProjectReference>
+    <CopyLocalDebugSymbols>true</CopyLocalDebugSymbols>
     <CopyCppRuntimeToOutputDir>true</CopyCppRuntimeToOutputDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -105,6 +121,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExpandAttributedSource />
     </ClCompile>
     <Link>
       <AdditionalDependencies />
@@ -116,6 +133,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExpandAttributedSource />
     </ClCompile>
     <Link>
       <AdditionalDependencies />
@@ -124,12 +142,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Net" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
+    <Reference Include="System">
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>true</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="About.cpp" />
@@ -140,7 +170,6 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="DownloadDb.h" />
-    <ClInclude Include="hack.h" />
     <ClInclude Include="MainPage.h">
       <FileType>CppForm</FileType>
     </ClInclude>
