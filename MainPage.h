@@ -244,6 +244,14 @@ namespace sparrdremdownloader {
 			{
 				this->DownloadBtn->Enabled = false;
 			}
+			if (this->launchInstallBox->Enabled == true)
+			{
+				if (this->launchInstallBox->Checked == true)
+				{
+					this->launchInstallBox->Checked = false;
+				}
+				this->launchInstallBox->Enabled = false;
+			}
 			if (this->ProjectComboBox->Text == "casmOS (-= Pre-release =-)")
 			{
 				this->VersionComboBox->Items->Add("v0.0.2.6-alpha");
@@ -421,6 +429,14 @@ namespace sparrdremdownloader {
 			{
 				this->DownloadBtn->Enabled = false;
 			}
+			if (this->launchInstallBox->Enabled == true)
+			{
+				if (this->launchInstallBox->Checked == true)
+				{
+					this->launchInstallBox->Checked = false;
+				}
+				this->launchInstallBox->Enabled = false;
+			}
 			if (this->ProjectComboBox->Text == "casmOS (-= Pre-release =-)")
 			{
 				if (this->VersionComboBox->Text == "v0.0.2.6-alpha")
@@ -508,12 +524,14 @@ namespace sparrdremdownloader {
 				{
 					this->ArchComboBox->Items->Add("x86");
 					this->ArchComboBox->Enabled = true;
+					this->launchInstallBox->Enabled = true;
 					return;
 				}
 				if (this->VersionComboBox->Text == "v0.5-Preview")
 				{
 					this->ArchComboBox->Items->Add("x86");
 					this->ArchComboBox->Enabled = true;
+					this->launchInstallBox->Enabled = true;
 					return;
 				}
 				if (this->VersionComboBox->Text == "v0.5-Preview (Bin)")
@@ -532,6 +550,7 @@ namespace sparrdremdownloader {
 				{
 					this->ArchComboBox->Items->Add("x86");
 					this->ArchComboBox->Enabled = true;
+					this->launchInstallBox->Enabled = true;
 					return;
 				}
 				if (this->VersionComboBox->Text == "v0.5-Debug (Bin)")
@@ -544,12 +563,14 @@ namespace sparrdremdownloader {
 				{
 					this->ArchComboBox->Items->Add("x86");
 					this->ArchComboBox->Enabled = true;
+					this->launchInstallBox->Enabled = true;
 					return;
 				}
 				if (this->VersionComboBox->Text == "v0.4-Preview")
 				{
 					this->ArchComboBox->Items->Add("x86");
 					this->ArchComboBox->Enabled = true;
+					this->launchInstallBox->Enabled = true;
 					return;
 				}
 				if (this->VersionComboBox->Text == "v0.4-Preview (Bin)")
@@ -568,6 +589,7 @@ namespace sparrdremdownloader {
 				{
 					this->ArchComboBox->Items->Add("x86");
 					this->ArchComboBox->Enabled = true;
+					this->launchInstallBox->Enabled = true;
 					return;
 				}
 				if (this->VersionComboBox->Text == "v0.3-Preview (Bin)")
@@ -586,6 +608,7 @@ namespace sparrdremdownloader {
 				{
 					this->ArchComboBox->Items->Add("x86");
 					this->ArchComboBox->Enabled = true;
+					this->launchInstallBox->Enabled = true;
 					return;
 				}
 				if (this->VersionComboBox->Text == "v0.2-Preview (Bin)")
@@ -610,6 +633,7 @@ namespace sparrdremdownloader {
 				{
 					this->ArchComboBox->Items->Add("x86");
 					this->ArchComboBox->Enabled = true;
+					this->launchInstallBox->Enabled = true;
 					return;
 				}
 				if (this->VersionComboBox->Text == "v0.1-Preview (Bin)")
@@ -656,6 +680,7 @@ namespace sparrdremdownloader {
 					this->ArchComboBox->Items->Add("x64");
 					this->ArchComboBox->Items->Add("x86");
 					this->ArchComboBox->Enabled = true;
+					this->launchInstallBox->Enabled = true;
 					return;
 				}
 				if (this->VersionComboBox->Text == "v0.0.0.2 (Windows) (Bin)")
@@ -766,12 +791,14 @@ namespace sparrdremdownloader {
 				{
 					this->ArchComboBox->Items->Add("x86");
 					this->ArchComboBox->Enabled = true;
+					this->launchInstallBox->Enabled = true;
 					return;
 				}
 				if (this->VersionComboBox->Text == "Build #0040 (Special Edition)")
 				{
 					this->ArchComboBox->Items->Add("x86");
 					this->ArchComboBox->Enabled = true;
+					this->launchInstallBox->Enabled = true;
 					return;
 				}
 				if (this->VersionComboBox->Text == "Build #0030 (Not yet available)")
@@ -833,6 +860,7 @@ namespace sparrdremdownloader {
 				{
 					this->ArchComboBox->Items->Add("x86");
 					this->ArchComboBox->Enabled = true;
+					this->launchInstallBox->Enabled = true;
 					return;
 				}
 				if (this->VersionComboBox->Text == "v1.0.284-beta (Bin)")
@@ -845,6 +873,7 @@ namespace sparrdremdownloader {
 				{
 					this->ArchComboBox->Items->Add("x86");
 					this->ArchComboBox->Enabled = true;
+					this->launchInstallBox->Enabled = true;
 					return;
 				}
 				if (this->VersionComboBox->Text == "v1.0.284-beta (Legacy) (Bin)")
@@ -860,6 +889,7 @@ namespace sparrdremdownloader {
 				{
 					this->ArchComboBox->Items->Add("x86");
 					this->ArchComboBox->Enabled = true;
+					this->launchInstallBox->Enabled = true;
 					return;
 				}
 			}
@@ -1814,7 +1844,14 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadGencode_v05plus_x86_english();
 
 							this->DownloadBtn->Enabled = true;
-							Process::Start("explorer.exe", Application::StartupPath);
+							if (this->launchInstallBox->Checked == true)
+							{
+								Process::Start(Application::StartupPath + "\\gencode-plus_v0.5-setup.exe");
+							}
+							if (this->launchInstallBox->Checked == false)
+							{
+								Process::Start("explorer.exe", Application::StartupPath);
+							}
 							return;
 						}
 					}
@@ -1830,7 +1867,14 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadGencode_v05preview_x86_english();
 
 							this->DownloadBtn->Enabled = true;
-							Process::Start("explorer.exe", Application::StartupPath);
+							if (this->launchInstallBox->Checked == true)
+							{
+								Process::Start(Application::StartupPath + "\\gencode_v0.5-setup.exe");
+							}
+							if (this->launchInstallBox->Checked == false)
+							{
+								Process::Start("explorer.exe", Application::StartupPath);
+							}
 							return;
 						}
 					}
@@ -1878,7 +1922,14 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadGencode_v05debug_x86_english();
 
 							this->DownloadBtn->Enabled = true;
-							Process::Start("explorer.exe", Application::StartupPath);
+							if (this->launchInstallBox->Checked == true)
+							{
+								Process::Start(Application::StartupPath + "\\gencode_v0.5-setup-dbg.exe");
+							}
+							if (this->launchInstallBox->Checked == false)
+							{
+								Process::Start("explorer.exe", Application::StartupPath);
+							}
 							return;
 						}
 					}
@@ -1926,7 +1977,14 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadGencode_v04preview_x86_english();
 
 							this->DownloadBtn->Enabled = true;
-							Process::Start("explorer.exe", Application::StartupPath);
+							if (this->launchInstallBox->Checked == true)
+							{
+								Process::Start(Application::StartupPath + "\\gencode_v0.4-setup.exe");
+							}
+							if (this->launchInstallBox->Checked == false)
+							{
+								Process::Start("explorer.exe", Application::StartupPath);
+							}
 							return;
 						}
 						if (this->LanguageComboBox->Text == "Multilanguage")
@@ -1936,7 +1994,14 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadGencode_v04preview_x86_multilanguage();
 
 							this->DownloadBtn->Enabled = true;
-							Process::Start("explorer.exe", Application::StartupPath);
+							if (this->launchInstallBox->Checked == true)
+							{
+								Process::Start(Application::StartupPath + "\\gencode_v0.4-setup-mu.exe");
+							}
+							if (this->launchInstallBox->Checked == false)
+							{
+								Process::Start("explorer.exe", Application::StartupPath);
+							}
 							return;
 						}
 						if (this->LanguageComboBox->Text == "Spanish")
@@ -1946,7 +2011,14 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadGencode_v04preview_x86_spanish();
 
 							this->DownloadBtn->Enabled = true;
-							Process::Start("explorer.exe", Application::StartupPath);
+							if (this->launchInstallBox->Checked == true)
+							{
+								Process::Start(Application::StartupPath + "\\gencode_v0.4-setup-es.exe");
+							}
+							if (this->launchInstallBox->Checked == false)
+							{
+								Process::Start("explorer.exe", Application::StartupPath);
+							}
 							return;
 						}
 					}
@@ -2014,7 +2086,14 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadGencode_v03preview_x86_english();
 
 							this->DownloadBtn->Enabled = true;
-							Process::Start("explorer.exe", Application::StartupPath);
+							if (this->launchInstallBox->Checked == true)
+							{
+								Process::Start(Application::StartupPath + "\\gencode_v0.3-setup.exe");
+							}
+							if (this->launchInstallBox->Checked == false)
+							{
+								Process::Start("explorer.exe", Application::StartupPath);
+							}
 							return;
 						}
 					}
@@ -2062,7 +2141,14 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadGencode_v02preview_x86_english();
 
 							this->DownloadBtn->Enabled = true;
-							Process::Start("explorer.exe", Application::StartupPath);
+							if (this->launchInstallBox->Checked == true)
+							{
+								Process::Start(Application::StartupPath + "\\gencode_v0.2-setup.exe");
+							}
+							if (this->launchInstallBox->Checked == false)
+							{
+								Process::Start("explorer.exe", Application::StartupPath);
+							}
 							return;
 						}
 					}
@@ -2126,7 +2212,14 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadGencode_v01preview_x86_english();
 
 							this->DownloadBtn->Enabled = true;
-							Process::Start("explorer.exe", Application::StartupPath);
+							if (this->launchInstallBox->Checked == true)
+							{
+								Process::Start(Application::StartupPath + "\\gencode_v0.1-setup.exe");
+							}
+							if (this->launchInstallBox->Checked == false)
+							{
+								Process::Start("explorer.exe", Application::StartupPath);
+							}
 							return;
 						}
 					}
@@ -2231,7 +2324,14 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadLALO_v0002windows_x64_english();
 
 							this->DownloadBtn->Enabled = true;
-							Process::Start("explorer.exe", Application::StartupPath);
+							if (this->launchInstallBox->Checked == true)
+							{
+								Process::Start(Application::StartupPath + "\\lalo-eda_v0.0.0.2_win64_setup.exe");
+							}
+							if (this->launchInstallBox->Checked == false)
+							{
+								Process::Start("explorer.exe", Application::StartupPath);
+							}
 							return;
 						}
 					}
@@ -2244,7 +2344,14 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadLALO_v0002windows_x86_english();
 
 							this->DownloadBtn->Enabled = true;
-							Process::Start("explorer.exe", Application::StartupPath);
+							if (this->launchInstallBox->Checked == true)
+							{
+								Process::Start(Application::StartupPath + "\\lalo-eda_v0.0.0.2_win32_setup.exe");
+							}
+							if (this->launchInstallBox->Checked == false)
+							{
+								Process::Start("explorer.exe", Application::StartupPath);
+							}
 							return;
 						}
 					}
@@ -2564,7 +2671,14 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadSYGTVG_v0040discordrp_x86_english();
 							
 							this->DownloadBtn->Enabled = true;
-							Process::Start("explorer.exe", Application::StartupPath);
+							if (this->launchInstallBox->Checked == true)
+							{
+								Process::Start(Application::StartupPath + "\\SYGTVGTEST0040_includes_discordrp.exe");
+							}
+							if (this->launchInstallBox->Checked == false)
+							{
+								Process::Start("explorer.exe", Application::StartupPath);
+							}
 							return;
 						}
 					}
@@ -2580,7 +2694,14 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadSYGTVG_v0040_x86_english();
 
 							this->DownloadBtn->Enabled = true;
-							Process::Start("explorer.exe", Application::StartupPath);
+							if (this->launchInstallBox->Checked == true)
+							{
+								Process::Start(Application::StartupPath + "\\SYGTVGTEST0040.exe");
+							}
+							if (this->launchInstallBox->Checked == false)
+							{
+								Process::Start("explorer.exe", Application::StartupPath);
+							}
 							return;
 						}
 					}
@@ -2775,7 +2896,14 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadUPTIME_v10284beta_x86_english();
 
 							this->DownloadBtn->Enabled = true;
-							Process::Start("explorer.exe", Application::StartupPath);
+							if (this->launchInstallBox->Checked == true)
+							{
+								Process::Start(Application::StartupPath + "\\uptime_v1.0-setup-beta.exe");
+							}
+							if (this->launchInstallBox->Checked == false)
+							{
+								Process::Start("explorer.exe", Application::StartupPath);
+							}
 							return;
 						}
 					}
@@ -2842,7 +2970,14 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadWindows9Downloader_v04_x86_english();
 
 							this->DownloadBtn->Enabled = true;
-							Process::Start("explorer.exe", Application::StartupPath);
+							if (this->launchInstallBox->Checked == true)
+							{
+								Process::Start(Application::StartupPath + "\\Win9-Downloader.exe");
+							}
+							if (this->launchInstallBox->Checked == false)
+							{
+								Process::Start("explorer.exe", Application::StartupPath);
+							}
 							return;
 						}
 					}

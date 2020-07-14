@@ -287,7 +287,7 @@ namespace sparrdremdownloader {
 	public: static void DownloadGencode_v05debug_x86_english()
 	{
 		String^ remoteUri = "https://github.com/sparrdrem/gencode/releases/download/v0.5-dbg/";
-		String^ fileName = "gencode_v0.5-setup-dbg.zip", ^ myStringWebResource = nullptr;
+		String^ fileName = "gencode_v0.5-setup-dbg.exe", ^ myStringWebResource = nullptr;
 
 		WebClient^ wcdl = gcnew WebClient;
 

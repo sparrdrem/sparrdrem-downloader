@@ -443,6 +443,9 @@
   <data name="&gt;&gt;linkLabel1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="manageBtn.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="manageBtn.Location" type="System.Drawing.Point, System.Drawing">
     <value>179, 148</value>
   </data>
