@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/usr/share/sparrdrem-downloader/sparrdrem-downloader

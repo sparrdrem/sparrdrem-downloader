@@ -1,0 +1,30 @@
+#!/usr/bin/env xdg-open
+
+################################################
+#                                              #
+# Created by SparrOSDeveloperTeam              #
+# https://github.com/SparrOSDeveloperTeam/     #
+#                                              #
+# ============================================ #
+#                                              #
+# sparrdrem-downloader.desktop                 #
+#                                              #
+# ============================================ #
+#                                              #
+# This file is used to execute the SparrDrem   #
+# Downloader which should be located in /usr/  #
+# share/sparrdrem-downloader. It just pretty   #
+# much acts like a .lnk for Windows.           #
+#                                              #
+################################################
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=SparrDrem Downloader
+Comment=Tool for downloading our projects.
+Exec=/usr/share/sparrdrem-downloader/sparrdrem-downloader
+Icon=/usr/share/sparrdrem-downloader/sparrdrem-downloader.png
+Terminal=false
+Category=utility
+
