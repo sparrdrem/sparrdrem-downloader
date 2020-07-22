@@ -80,7 +80,7 @@ sparrdrem_downloaderFrame::sparrdrem_downloaderFrame(wxWindow* parent,wxWindowID
     SetClientSize(wxSize(444,218));
     {
     	wxIcon FrameIcon;
-    	FrameIcon.CopyFromBitmap(wxBitmap(wxImage(_T("/home/tm2048/codeblocks/sparrdrem-downloader/sparrdrem-downloader.ico"))));
+    	FrameIcon.CopyFromBitmap(wxBitmap(wxImage(_T("/usr/share/sparrdrem-downloader/sparrdrem-downloader.ico"))));
     	SetIcon(FrameIcon);
     }
     Panel1 = new wxPanel(this, ID_PANEL1, wxPoint(64,64), wxDefaultSize, wxTAB_TRAVERSAL, _T("ID_PANEL1"));

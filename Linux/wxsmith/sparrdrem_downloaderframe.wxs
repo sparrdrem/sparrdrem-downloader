@@ -3,7 +3,7 @@
 	<object class="wxFrame" name="sparrdrem_downloaderFrame">
 		<title>SparrDrem Downloader</title>
 		<centered>1</centered>
-		<icon>/home/tm2048/codeblocks/sparrdrem-downloader/sparrdrem-downloader.ico</icon>
+		<icon>/usr/share/sparrdrem-downloader/sparrdrem-downloader.ico</icon>
 		<size>444,218</size>
 		<id_arg>0</id_arg>
 		<handler function="OnClose" entry="EVT_CLOSE" />

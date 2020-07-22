@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1595228664 source:/home/tm2048/codeblocks/sparrdrem-downloader/wx_pch.h
+1595308552 source:/home/tm2048/codeblocks/sparrdrem-downloader/wx_pch.h
 	<wx/wxprec.h>
 	<wx/wx.h>
 
@@ -1640,20 +1640,20 @@
 1485352693 /usr/include/wx-3.0/wx/gtk/mdi.h
 	"wx/frame.h"
 
-1595228664 source:/home/tm2048/codeblocks/sparrdrem-downloader/sparrdrem_downloaderApp.cpp
+1595308552 source:/home/tm2048/codeblocks/sparrdrem-downloader/sparrdrem_downloaderApp.cpp
 	"wx_pch.h"
 	"sparrdrem_downloaderApp.h"
 	"sparrdrem_downloaderMain.h"
 	<wx/image.h>
 
-1595228664 /home/tm2048/codeblocks/sparrdrem-downloader/wx_pch.h
+1595308552 /home/tm2048/codeblocks/sparrdrem-downloader/wx_pch.h
 	<wx/wxprec.h>
 	<wx/wx.h>
 
-1595228664 /home/tm2048/codeblocks/sparrdrem-downloader/sparrdrem_downloaderApp.h
+1595308552 /home/tm2048/codeblocks/sparrdrem-downloader/sparrdrem_downloaderApp.h
 	<wx/app.h>
 
-1595264882 /home/tm2048/codeblocks/sparrdrem-downloader/sparrdrem_downloaderMain.h
+1595308552 /home/tm2048/codeblocks/sparrdrem-downloader/sparrdrem_downloaderMain.h
 	<wx/sizer.h>
 	<wx/button.h>
 	<wx/menu.h>
@@ -1708,4 +1708,40 @@
 
 1485352693 /usr/include/wx-3.0/wx/gtk/notebook.h
 	"wx/list.h"
+
+1595308552 source:/codeblocks/sparrdrem-downloader/wx_pch.h
+	<wx/wxprec.h>
+	<wx/wx.h>
+
+1595308552 source:/codeblocks/sparrdrem-downloader/sparrdrem_downloaderApp.cpp
+	"wx_pch.h"
+	"sparrdrem_downloaderApp.h"
+	"sparrdrem_downloaderMain.h"
+	<wx/image.h>
+
+1595308552 /codeblocks/sparrdrem-downloader/wx_pch.h
+	<wx/wxprec.h>
+	<wx/wx.h>
+
+1595308552 /codeblocks/sparrdrem-downloader/sparrdrem_downloaderApp.h
+	<wx/app.h>
+
+1595308552 /codeblocks/sparrdrem-downloader/sparrdrem_downloaderMain.h
+	<wx/sizer.h>
+	<wx/button.h>
+	<wx/menu.h>
+	<wx/panel.h>
+	<wx/frame.h>
+	<wx/stattext.h>
+	<wx/choice.h>
+
+1595443517 source:/codeblocks/sparrdrem-downloader/sparrdrem_downloaderMain.cpp
+	"wx_pch.h"
+	"sparrdrem_downloaderMain.h"
+	<wx/msgdlg.h>
+	<wx/string.h>
+	<wx/intl.h>
+	<wx/bitmap.h>
+	<wx/icon.h>
+	<wx/image.h>
 
