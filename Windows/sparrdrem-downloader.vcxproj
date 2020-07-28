@@ -168,6 +168,7 @@
   <ItemGroup>
     <ClCompile Include="About.cpp" />
     <ClCompile Include="MainPage.cpp" />
+    <ClCompile Include="ManageDownloads.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="About.h">
@@ -175,6 +176,9 @@
     </ClInclude>
     <ClInclude Include="DownloadDb.h" />
     <ClInclude Include="MainPage.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ManageDownloads.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="resource.h" />
@@ -185,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageDownloads.resx">
+      <DependentUpon>ManageDownloads.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

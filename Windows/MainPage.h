@@ -17,6 +17,7 @@ using namespace std;
 
 #include "DownloadDb.h"
 #include "About.h"
+#include "ManageDownloads.h"
 
 namespace sparrdremdownloader {
 
@@ -190,6 +191,7 @@ namespace sparrdremdownloader {
 			resources->ApplyResources(this->manageBtn, L"manageBtn");
 			this->manageBtn->Name = L"manageBtn";
 			this->manageBtn->UseVisualStyleBackColor = true;
+			this->manageBtn->Click += gcnew System::EventHandler(this, &MainPage::manageBtn_Click);
 			// 
 			// launchInstallBox
 			// 
@@ -563,7 +565,6 @@ namespace sparrdremdownloader {
 				{
 					this->ArchComboBox->Items->Add("x86");
 					this->ArchComboBox->Enabled = true;
-					this->launchInstallBox->Enabled = true;
 					return;
 				}
 				if (this->VersionComboBox->Text == "v0.4-Preview")
@@ -3023,6 +3024,10 @@ namespace sparrdremdownloader {
 		{
 			About^ abt = gcnew About;
 			abt->Show();
+		}
+		private: System::Void manageBtn_Click(System::Object^ sender, System::EventArgs^ e) {
+			ManageDownloads^ manage = gcnew ManageDownloads;
+			manage->Show();
 		}
 	};
 }

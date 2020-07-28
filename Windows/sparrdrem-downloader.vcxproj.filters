@@ -27,12 +27,18 @@
     <ClInclude Include="About.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ManageDownloads.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainPage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="About.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManageDownloads.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

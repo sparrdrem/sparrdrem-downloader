@@ -342,7 +342,7 @@ namespace sparrdremdownloader {
 	}
 	public: static void DownloadGencode_v04previewbin_x86_english()
 	{
-		String^ remoteUri = "https://github.com/sparrdrem/gencode/releases/download/v0.5-preview/";
+		String^ remoteUri = "https://github.com/sparrdrem/gencode/releases/download/v0.4-preview/";
 		String^ fileName = "gencode_v0.4-bin.zip", ^ myStringWebResource = nullptr;
 
 		WebClient^ wcdl = gcnew WebClient;
