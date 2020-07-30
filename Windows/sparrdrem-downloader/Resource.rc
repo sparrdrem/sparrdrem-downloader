@@ -71,7 +71,7 @@ BEGIN
             VALUE "FileDescription", "SparrDrem Downloader"
             VALUE "FileVersion", "1.1.0.0"
             VALUE "InternalName", "sparrdrem-downloader.exe"
-            VALUE "LegalCopyright", "Copyright (C) 2018-2020 SparrDrem, 2015-2020 SparrOSDeveloperTeam, 2009-2020 Innovation Inc."
+            VALUE "LegalCopyright", "Copyright (C) 2018-2020 SparrDrem, (C) 2015-2020 SparrOSDeveloperTeam, (C) 2009-2020 Innovation Inc."
             VALUE "OriginalFilename", "sparrdrem-downloader.exe"
             VALUE "ProductName", "SparrDrem Downloader"
             VALUE "ProductVersion", "1.1.0.0"

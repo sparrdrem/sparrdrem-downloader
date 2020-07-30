@@ -15,7 +15,7 @@
 using namespace std;
 */
 
-#include "DownloadDb.h"
+//#include "..\downloaddb\DownloadDb.h"
 #include "About.h"
 #include "ManageDownloads.h"
 
@@ -30,6 +30,7 @@ namespace sparrdremdownloader {
 	using namespace System::Diagnostics;
 	using namespace System::Net;
 	using namespace System::IO;
+	using namespace sparrdremdownloader;
 
 	/// <summary>
 	/// Summary for MainPage

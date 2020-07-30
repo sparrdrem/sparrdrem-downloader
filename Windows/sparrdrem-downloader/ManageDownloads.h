@@ -173,9 +173,17 @@ namespace sparrdremdownloader {
 			{
 				downloadsListBox->Items->Add("DremOS-0.6.0.iso");
 			}
-			if (File::Exists(Application::StartupPath + "\\unixv5.gba") == true)
+			if (File::Exists(Application::StartupPath + "\\dtools-1.0.zip") == true)
 			{
-				downloadsListBox->Items->Add("unixv5.gba");
+				downloadsListBox->Items->Add("dtools-1.0.zip");
+			}
+			if (File::Exists(Application::StartupPath + "\\dtools-1.1.zip") == true)
+			{
+				downloadsListBox->Items->Add("dtools-1.1.zip");
+			}
+			if (File::Exists(Application::StartupPath + "\\dtools-1.2.zip") == true)
+			{
+				downloadsListBox->Items->Add("dtools-1.1.zip");
 			}
 			if (File::Exists(Application::StartupPath + "\\gencmd_v0.1b-bin.zip") == true)
 			{
@@ -268,6 +276,10 @@ namespace sparrdremdownloader {
 			if (File::Exists(Application::StartupPath + "\\gencode-plus_v0.5-setup.exe") == true)
 			{
 				downloadsListBox->Items->Add("gencode-plus_v0.5-setup.exe");
+			}
+			if (File::Exists(Application::StartupPath + "\\unixv5.gba") == true)
+			{
+				downloadsListBox->Items->Add("unixv5.gba");
 			}
 			if (File::Exists(Application::StartupPath + "\\Win9-Downloader.exe") == true)
 			{

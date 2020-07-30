@@ -146,6 +146,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Reference Include="downloaddb">
+      <HintPath>downloaddb.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <Private>true</Private>
     </Reference>
@@ -174,7 +177,6 @@
     <ClInclude Include="About.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="DownloadDb.h" />
     <ClInclude Include="MainPage.h">
       <FileType>CppForm</FileType>
     </ClInclude>
