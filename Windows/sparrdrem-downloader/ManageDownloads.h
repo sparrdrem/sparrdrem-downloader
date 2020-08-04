@@ -119,6 +119,7 @@ namespace sparrdremdownloader {
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Manage Downloads";
 			this->Load += gcnew System::EventHandler(this, &ManageDownloads::ManageDownloads_Load);
+			this->Click += gcnew System::EventHandler(this, &ManageDownloads::ManageDownloads_Click);
 			this->ResumeLayout(false);
 
 		}
@@ -365,16 +366,52 @@ namespace sparrdremdownloader {
 			{
 				downloadsListBox->Items->Add("sparros_x86_20200224_alpha_v0.0.2.vmdk.zip");
 			}
+			if (File::Exists(Application::StartupPath + "\\SYGTVGTEST0040.exe") == true)
+			{
+				downloadsListBox->Items->Add("SYGTVGTEST0040.exe");
+			}
+			if (File::Exists(Application::StartupPath + "\\SYGTVGTEST0040_includes_discordrp.exe") == true)
+			{
+				downloadsListBox->Items->Add("SYGTVGTEST0040_includes_discordrp.exe");
+			}
 			if (File::Exists(Application::StartupPath + "\\unixv5.gba") == true)
 			{
 				downloadsListBox->Items->Add("unixv5.gba");
+			}
+			if (File::Exists(Application::StartupPath + "\\uptime_v1.0-bin-beta.zip") == true)
+			{
+				downloadsListBox->Items->Add("uptime_v1.0-bin-beta.zip");
+			}
+			if (File::Exists(Application::StartupPath + "\\uptime_v1.0-setup-beta.exe") == true)
+			{
+				downloadsListBox->Items->Add("uptime_v1.0-setup-beta.exe");
+			}
+			if (File::Exists(Application::StartupPath + "\\uptime_v1.0-bin-beta-legacy.zip") == true)
+			{
+				downloadsListBox->Items->Add("uptime_v1.0-bin-beta-legacy.zip");
+			}
+			if (File::Exists(Application::StartupPath + "\\uptime_v1.0-setup-beta-legacy.exe") == true)
+			{
+				downloadsListBox->Items->Add("uptime_v1.0-setup-beta-legacy.exe");
+			}
+			if (File::Exists(Application::StartupPath + "\\usrcheat-old_v0.1.zip") == true)
+			{
+				downloadsListBox->Items->Add("usrcheat-old_v0.1.zip");
 			}
 			if (File::Exists(Application::StartupPath + "\\Win9-Downloader.exe") == true)
 			{
 				downloadsListBox->Items->Add("Win9-Downloader.exe");
 			}
+			if (File::Exists(Application::StartupPath + "\\yoes_usercheat-database_current.zip") == true)
+			{
+				downloadsListBox->Items->Add("yoes_usercheat-database_current.zip");
+			}
 		}
 		private: System::Void ManageDownloads_Load(System::Object^ sender, System::EventArgs^ e) {
+			CheckForFiles();
+		}
+		private: System::Void ManageDownloads_Click(System::Object^ sender, System::EventArgs^ e)
+		{
 			CheckForFiles();
 		}
 		private: System::Void refreshBtn_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -402,6 +439,12 @@ namespace sparrdremdownloader {
 			if (downloadsListBox->SelectedItem == "casmos-x86_64_0.0.2.6-alpha.iso")
 			{
 				File::Delete(Application::StartupPath + "\\casmos-x86_64_0.0.2.6-alpha.iso");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "cd-osk-proto.7z")
+			{
+				File::Delete(Application::StartupPath + "\\cd-osk-proto.7z");
 				CheckForFiles();
 				return;
 			}
