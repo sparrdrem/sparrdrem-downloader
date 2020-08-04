@@ -2472,6 +2472,8 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadOTN_v011server_x86_english();
 
 							this->DownloadBtn->Enabled = true;
+							File::Copy(Application::StartupPath + "\\otn-server.exe", Application::StartupPath + "\\otn-server_v0.1.1.exe");
+							File::Delete(Application::StartupPath + "\\otn-server.exe");
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
 						}
@@ -2488,6 +2490,8 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadOTN_v011client_x86_english();
 
 							this->DownloadBtn->Enabled = true;
+							File::Copy(Application::StartupPath + "\\OTNClient.exe", Application::StartupPath + "\\OTNClient_v0.1.1.exe");
+							File::Delete(Application::StartupPath + "\\OTNClient.exe");
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
 						}
@@ -2504,6 +2508,8 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadOTN_v010_x86_english();
 
 							this->DownloadBtn->Enabled = true;
+							File::Copy(Application::StartupPath + "\\otn-server.exe", Application::StartupPath + "\\otn-server_v0.1.0.exe");
+							File::Delete(Application::StartupPath + "\\otn-server.exe");
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
 						}
@@ -2520,6 +2526,8 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadOTN_v008_x86_english();
 
 							this->DownloadBtn->Enabled = true;
+							File::Copy(Application::StartupPath + "\\otn-server.exe", Application::StartupPath + "\\otn-server_v0.0.8.exe");
+							File::Delete(Application::StartupPath + "\\otn-server.exe");
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
 						}
@@ -2536,6 +2544,8 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadOTN_v007_x86_english();
 
 							this->DownloadBtn->Enabled = true;
+							File::Copy(Application::StartupPath + "\\otn-server.exe", Application::StartupPath + "\\otn-server_v0.0.7.exe");
+							File::Delete(Application::StartupPath + "\\otn-server.exe");
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
 						}
@@ -2552,6 +2562,8 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadOTN_v006_x86_english();
 
 							this->DownloadBtn->Enabled = true;
+							File::Copy(Application::StartupPath + "\\otn-server.exe", Application::StartupPath + "\\otn-server_v0.0.6.exe");
+							File::Delete(Application::StartupPath + "\\otn-server.exe");
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
 						}
@@ -2568,6 +2580,8 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadOTN_v005_x86_english();
 
 							this->DownloadBtn->Enabled = true;
+							File::Copy(Application::StartupPath + "\\otn-server.exe", Application::StartupPath + "\\otn-server_v0.0.5.exe");
+							File::Delete(Application::StartupPath + "\\otn-server.exe");
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
 						}
@@ -2584,6 +2598,8 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadOTN_v004_x86_english();
 
 							this->DownloadBtn->Enabled = true;
+							File::Copy(Application::StartupPath + "\\otn-server.exe", Application::StartupPath + "\\otn-server_v0.0.4.exe");
+							File::Delete(Application::StartupPath + "\\otn-server.exe");
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
 						}
@@ -2600,6 +2616,8 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadOTN_v003_x86_english();
 
 							this->DownloadBtn->Enabled = true;
+							File::Copy(Application::StartupPath + "\\otn-server.exe", Application::StartupPath + "\\otn-server_v0.0.3.exe");
+							File::Delete(Application::StartupPath + "\\otn-server.exe");
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
 						}
@@ -2616,6 +2634,8 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadOTN_v002_x86_english();
 
 							this->DownloadBtn->Enabled = true;
+							File::Copy(Application::StartupPath + "\\otn-server.exe", Application::StartupPath + "\\otn-server_v0.0.2.exe");
+							File::Delete(Application::StartupPath + "\\otn-server.exe");
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
 						}
@@ -2632,6 +2652,8 @@ namespace sparrdremdownloader {
 							DownloadDb::DownloadOTN_v001_x86_english();
 
 							this->DownloadBtn->Enabled = true;
+							File::Copy(Application::StartupPath + "\\otn-server.exe", Application::StartupPath + "\\otn-server_v0.0.1.exe");
+							File::Delete(Application::StartupPath + "\\otn-server.exe");
 							Process::Start("explorer.exe", Application::StartupPath);
 							return;
 						}

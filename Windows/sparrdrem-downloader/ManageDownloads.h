@@ -277,6 +277,94 @@ namespace sparrdremdownloader {
 			{
 				downloadsListBox->Items->Add("gencode-plus_v0.5-setup.exe");
 			}
+			if (File::Exists(Application::StartupPath + "\\gossamer-launcher_0.9.44.227_x64_win.zip.zip") == true)
+			{
+				downloadsListBox->Items->Add("gossamer-launcher_0.9.44.227b_x64_win.zip.zip");
+			}
+			if (File::Exists(Application::StartupPath + "\\gossamer-launcher_0.9.44.227b_x64_win.zip.zip") == true)
+			{
+				downloadsListBox->Items->Add("gossamer-launcher_0.9.44.227b_x64_win.zip.zip");
+			}
+			if (File::Exists(Application::StartupPath + "\\hostname_linux.zip") == true)
+			{
+				downloadsListBox->Items->Add("hostname_linux.zip");
+			}
+			if (File::Exists(Application::StartupPath + "\\hostname_win.zip") == true)
+			{
+				downloadsListBox->Items->Add("hostname_win.zip");
+			}
+			if (File::Exists(Application::StartupPath + "\\lalo-eda_v0.0.0.2_unix32_bin.zip") == true)
+			{
+				downloadsListBox->Items->Add("lalo-eda_v0.0.0.2_unix32_bin.zip");
+			}
+			if (File::Exists(Application::StartupPath + "\\lalo-eda_v0.0.0.2_unix32_setup.deb") == true)
+			{
+				downloadsListBox->Items->Add("lalo-eda_v0.0.0.2_unix32_setup.deb");
+			}
+			if (File::Exists(Application::StartupPath + "\\lalo-eda_v0.0.0.2_unix64_bin.zip") == true)
+			{
+				downloadsListBox->Items->Add("lalo-eda_v0.0.0.2_unix64_bin.zip");
+			}
+			if (File::Exists(Application::StartupPath + "\\lalo-eda_v0.0.0.2_unix64_setup.deb") == true)
+			{
+				downloadsListBox->Items->Add("lalo-eda_v0.0.0.2_unix64_setup.deb");
+			}
+			if (File::Exists(Application::StartupPath + "\\lalo-eda_v0.0.0.2_win32_bin.zip") == true)
+			{
+				downloadsListBox->Items->Add("lalo-eda_v0.0.0.2_win32_bin.zip");
+			}
+			if (File::Exists(Application::StartupPath + "\\lalo-eda_v0.0.0.2_win32_setup.exe") == true)
+			{
+				downloadsListBox->Items->Add("lalo-eda_v0.0.0.2_win32_setup.exe");
+			}
+			if (File::Exists(Application::StartupPath + "\\lalo-eda_v0.0.0.2_win64_bin.zip") == true)
+			{
+				downloadsListBox->Items->Add("lalo-eda_v0.0.0.2_win64_bin.zip");
+			}
+			if (File::Exists(Application::StartupPath + "\\lalo-eda_v0.0.0.2_win64_setup.exe") == true)
+			{
+				downloadsListBox->Items->Add("lalo-eda_v0.0.0.2_win64_setup.exe");
+			}
+			if (File::Exists(Application::StartupPath + "\\lalo-eda_v0.0.2-0_all.deb") == true)
+			{
+				downloadsListBox->Items->Add("lalo-eda_v0.0.2-0_all.deb");
+			}
+			if (File::Exists(Application::StartupPath + "\\sparros_armel_20200108_alpha_v0.0.1.img.xz") == true)
+			{
+				downloadsListBox->Items->Add("sparros_armel_20200108_alpha_v0.0.1.img.xz");
+			}
+			if (File::Exists(Application::StartupPath + "\\sparros_armel_20200224_alpha_v0.0.2.img.xz") == true)
+			{
+				downloadsListBox->Items->Add("sparros_armel_20200224_alpha_v0.0.2.img.xz");
+			}
+			if (File::Exists(Application::StartupPath + "\\sparros_armhf_20200108_alpha_v0.0.1.img.xz") == true)
+			{
+				downloadsListBox->Items->Add("sparros_armhf_20200108_alpha_v0.0.1.img.xz");
+			}
+			if (File::Exists(Application::StartupPath + "\\sparros_armhf_20200224_alpha_v0.0.2.img.xz") == true)
+			{
+				downloadsListBox->Items->Add("sparros_armhf_20200224_alpha_v0.0.2.img.xz");
+			}
+			if (File::Exists(Application::StartupPath + "\\sparros_x64_20200108_alpha_v0.0.1.iso.zip") == true)
+			{
+				downloadsListBox->Items->Add("sparros_x64_20200108_alpha_v0.0.1.iso.zip");
+			}
+			if (File::Exists(Application::StartupPath + "\\sparros_x64_20200224_alpha_v0.0.2.iso.zip") == true)
+			{
+				downloadsListBox->Items->Add("sparros_x64_20200224_alpha_v0.0.2.iso.zip");
+			}
+			if (File::Exists(Application::StartupPath + "\\sparros_x86_20200108_alpha_v0.0.1.iso.zip") == true)
+			{
+				downloadsListBox->Items->Add("sparros_x86_20200108_alpha_v0.0.1.iso.zip");
+			}
+			if (File::Exists(Application::StartupPath + "\\sparros_x86_20200224_alpha_v0.0.2.iso.zip") == true)
+			{
+				downloadsListBox->Items->Add("sparros_x86_20200224_alpha_v0.0.2.iso.zip");
+			}
+			if (File::Exists(Application::StartupPath + "\\sparros_x86_20200224_alpha_v0.0.2.vmdk.zip") == true)
+			{
+				downloadsListBox->Items->Add("sparros_x86_20200224_alpha_v0.0.2.vmdk.zip");
+			}
 			if (File::Exists(Application::StartupPath + "\\unixv5.gba") == true)
 			{
 				downloadsListBox->Items->Add("unixv5.gba");
