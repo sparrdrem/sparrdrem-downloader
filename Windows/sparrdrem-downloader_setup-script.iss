@@ -56,6 +56,27 @@ Name: quicklaunchicon; Description: "Create a &Quick Launch icon"; Flags: unchec
 ;Source: "program-dir\.NETFramework,Version=v4.7.2.AssemblyAttributes.obj"; DestDir: "{app}"; Components:
 ;Source: "program-dir\About.obj"; DestDir: "{app}"; Components:
 Source: "program-dir\concrt140.dll"; DestDir: "{app}"; Components: vcredist
+Source: "program-dir\downloaddb.dll"; DestDir: "{app}"; Components: maingui
+;Source: "program-dir\downloaddb.dll.megagen"; DestDir: "{app}"; Components:
+;Source: "program-dir\downloaddb.dll.recipe"; DestDir: "{app}"; Components:
+;Source: "program-dir\downloaddb.log"; DestDir: "{app}"; Components:
+;Source: "program-dir\downloaddb.obj"; DestDir: "{app}"; Components:
+;Source: "program-dir\downloaddb.pch"; DestDir: "{app}"; Components:
+Source: "program-dir\downloaddb.pdb"; DestDir: "{app}"; Components: debug
+;Source: "program-dir\downloaddb.vcxproj.FileListAbsolute.txt"; DestDir: "{app}"; Components:
+;Source: "program-dir\downloaddb.vcxprojAssemblyReference.cache"; DestDir: "{app}"; Components:
+;Source: "program-dir\downloaddb.tlog\CL.command.1.tlog"; DestDir: "{app}\downloaddb.tlog"; Components:
+;Source: "program-dir\downloaddb.tlog\CL.read.1.tlog"; DestDir: "{app}\downloaddb.tlog"; Components:
+;Source: "program-dir\downloaddb.tlog\CL.write.1.tlog"; DestDir: "{app}\downloaddb.tlog"; Components:
+;Source: "program-dir\downloaddb.tlog\downloaddb.lastbuildstate"; DestDir: "{app}\downloaddb.tlog"; Components:
+;Source: "program-dir\downloaddb.tlog\link.command.1.tlog"; DestDir: "{app}\downloaddb.tlog"; Components:
+;Source: "program-dir\downloaddb.tlog\link.read.1.tlog"; DestDir: "{app}\downloaddb.tlog"; Components:
+;Source: "program-dir\downloaddb.tlog\link.write.1.tlog"; DestDir: "{app}\downloaddb.tlog"; Components:
+;Source: "program-dir\downloaddb.tlog\metagen.read.1.tlog"; DestDir: "{app}\downloaddb.tlog"; Components:
+;Source: "program-dir\downloaddb.tlog\metagen.write.1.tlog"; DestDir: "{app}\downloaddb.tlog"; Components:
+;Source: "program-dir\downloaddb.tlog\rc.command.1.tlog"; DestDir: "{app}\downloaddb.tlog"; Components:
+;Source: "program-dir\downloaddb.tlog\rc.read.1.tlog"; DestDir: "{app}\downloaddb.tlog"; Components:
+;Source: "program-dir\downloaddb.tlog\rc.write.1.tlog"; DestDir: "{app}\downloaddb.tlog"; Components:
 Source: "program-dir\license.txt"; DestDir: "{app}"; Components: maingui 
 Source: "program-dir\mscorlib.dll"; DestDir: "{app}"; Components: dotnetredist
 Source: "program-dir\msvcp140.dll"; DestDir: "{app}"; Components: vcredist
