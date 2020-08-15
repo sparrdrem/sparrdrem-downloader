@@ -330,6 +330,50 @@ namespace sparrdremdownloader {
 			{
 				downloadsListBox->Items->Add("lalo-eda_v0.0.2-0_all.deb");
 			}
+			if (File::Exists(Application::StartupPath + "\\otn-server_v0.0.1.exe") == true)
+			{
+				downloadsListBox->Items->Add("otn-server_v0.0.1.exe");
+			}
+			if (File::Exists(Application::StartupPath + "\\otn-server_v0.0.2.exe") == true)
+			{
+				downloadsListBox->Items->Add("otn-server_v0.0.2.exe");
+			}
+			if (File::Exists(Application::StartupPath + "\\otn-server_v0.0.3.exe") == true)
+			{
+				downloadsListBox->Items->Add("otn-server_v0.0.3.exe");
+			}
+			if (File::Exists(Application::StartupPath + "\\otn-server_v0.0.4.exe") == true)
+			{
+				downloadsListBox->Items->Add("otn-server_v0.0.4.exe");
+			}
+			if (File::Exists(Application::StartupPath + "\\otn-server_v0.0.5.exe") == true)
+			{
+				downloadsListBox->Items->Add("otn-server_v0.0.5.exe");
+			}
+			if (File::Exists(Application::StartupPath + "\\otn-server_v0.0.6.exe") == true)
+			{
+				downloadsListBox->Items->Add("otn-server_v0.0.6.exe");
+			}
+			if (File::Exists(Application::StartupPath + "\\otn-server_v0.0.7.exe") == true)
+			{
+				downloadsListBox->Items->Add("otn-server_v0.0.7.exe");
+			}
+			if (File::Exists(Application::StartupPath + "\\otn-server_v0.0.8.exe") == true)
+			{
+				downloadsListBox->Items->Add("otn-server_v0.0.8.exe");
+			}
+			if (File::Exists(Application::StartupPath + "\\otn-server_v0.1.0.exe") == true)
+			{
+				downloadsListBox->Items->Add("otn-server_v0.1.0.exe");
+			}
+			if (File::Exists(Application::StartupPath + "\\otn-server_v0.1.1.exe") == true)
+			{
+				downloadsListBox->Items->Add("otn-server_v0.1.1.exe");
+			}
+			if (File::Exists(Application::StartupPath + "\\OTNClient_v0.1.1.exe") == true)
+			{
+				downloadsListBox->Items->Add("OTNClient_v0.1.1.exe");
+			}
 			if (File::Exists(Application::StartupPath + "\\sparros_armel_20200108_alpha_v0.0.1.img.xz") == true)
 			{
 				downloadsListBox->Items->Add("sparros_armel_20200108_alpha_v0.0.1.img.xz");
@@ -445,6 +489,60 @@ namespace sparrdremdownloader {
 			if (downloadsListBox->SelectedItem == "cd-osk-proto.7z")
 			{
 				File::Delete(Application::StartupPath + "\\cd-osk-proto.7z");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "cd-osk_v0.0.1.zip")
+			{
+				File::Delete(Application::StartupPath + "\\cd-osk_v0.0.1.zip");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "COS-Vision-II-B3200.iso")
+			{
+				File::Delete(Application::StartupPath + "\\COS-Vision-II-B3200.iso");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "DremDOS-0.0.1.iso")
+			{
+				File::Delete(Application::StartupPath + "\\DremDOS-0.0.1.iso");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "DremDOS-0.0.1-PROTO1.iso")
+			{
+				File::Delete(Application::StartupPath + "\\DremDOS-0.0.1-PROTO1.iso");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "DremDOS-0.0.1-RC1.iso")
+			{
+				File::Delete(Application::StartupPath + "\\DremDOS-0.0.1-RC1.iso");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "DremOS-0.6.0.iso")
+			{
+				File::Delete(Application::StartupPath + "\\DremOS-0.6.0.iso");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "dtools-1.0.zip")
+			{
+				File::Delete(Application::StartupPath + "\\dtools-1.0.zip");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "dtools-1.1.zip")
+			{
+				File::Delete(Application::StartupPath + "\\dtools-1.1.zip");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "dtools-1.2.zip")
+			{
+				File::Delete(Application::StartupPath + "\\dtools-1.2.zip");
 				CheckForFiles();
 				return;
 			}
@@ -583,6 +681,264 @@ namespace sparrdremdownloader {
 			if (downloadsListBox->SelectedItem == "gencode-plus_v0.5-setup.exe")
 			{
 				File::Delete(Application::StartupPath + "\\gencode-plus_v0.5-setup.exe");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "gossamer-launcher_0.9.44.227_x64_win.zip.zip")
+			{
+				File::Delete(Application::StartupPath + "\\gossamer-launcher_0.9.44.227_x64_win.zip.zip");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "gossamer-launcher_0.9.44.227b_x64_win.zip.zip")
+			{
+				File::Delete(Application::StartupPath + "\\gossamer-launcher_0.9.44.227b_x64_win.zip.zip");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "hostname_linux.zip")
+			{
+				File::Delete(Application::StartupPath + "\\hostname_linux.zip");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "hostname_win.zip")
+			{
+				File::Delete(Application::StartupPath + "\\hostname_win.zip");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "lalo-eda_v0.0.0.2_unix32_bin.zip")
+			{
+				File::Delete(Application::StartupPath + "\\lalo-eda_v0.0.0.2_unix32_bin.zip");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "lalo-eda_v0.0.0.2_unix32_setup.deb")
+			{
+				File::Delete(Application::StartupPath + "\\lalo-eda_v0.0.0.2_unix32_setup.deb");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "lalo-eda_v0.0.0.2_unix64_bin.zip")
+			{
+				File::Delete(Application::StartupPath + "\\lalo-eda_v0.0.0.2_unix64_bin.zip");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "lalo-eda_v0.0.0.2_unix64_setup.deb")
+			{
+				File::Delete(Application::StartupPath + "\\lalo-eda_v0.0.0.2_unix64_setup.deb");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "lalo-eda_v0.0.0.2_win32_bin.zip")
+			{
+				File::Delete(Application::StartupPath + "\\lalo-eda_v0.0.0.2_win32_bin.zip");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "lalo-eda_v0.0.0.2_win32_setup.exe")
+			{
+				File::Delete(Application::StartupPath + "\\lalo-eda_v0.0.0.2_win32_setup.exe");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "lalo-eda_v0.0.0.2_win64_bin.zip")
+			{
+				File::Delete(Application::StartupPath + "\\lalo-eda_v0.0.0.2_win64_bin.zip");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "lalo-eda_v0.0.0.2_win64_setup.exe")
+			{
+				File::Delete(Application::StartupPath + "\\lalo-eda_v0.0.0.2_win64_setup.exe");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "lalo-eda_v0.0.2-0_all.deb")
+			{
+				File::Delete(Application::StartupPath + "\\lalo-eda_v0.0.2-0_all.deb");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "otn-server_v0.0.1.exe")
+			{
+				File::Delete(Application::StartupPath + "\\otn-server_v0.0.1.exe");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "otn-server_v0.0.2.exe")
+			{
+				File::Delete(Application::StartupPath + "\\otn-server_v0.0.2.exe");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "otn-server_v0.0.3.exe")
+			{
+				File::Delete(Application::StartupPath + "\\otn-server_v0.0.3.exe");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "otn-server_v0.0.4.exe")
+			{
+				File::Delete(Application::StartupPath + "\\otn-server_v0.0.4.exe");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "otn-server_v0.0.5.exe")
+			{
+				File::Delete(Application::StartupPath + "\\otn-server_v0.0.5.exe");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "otn-server_v0.0.6.exe")
+			{
+				File::Delete(Application::StartupPath + "\\otn-server_v0.0.6.exe");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "otn-server_v0.0.7.exe")
+			{
+				File::Delete(Application::StartupPath + "\\otn-server_v0.0.7.exe");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "otn-server_v0.0.8.exe")
+			{
+				File::Delete(Application::StartupPath + "\\otn-server_v0.0.8.exe");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "otn-server_v0.1.0.exe")
+			{
+				File::Delete(Application::StartupPath + "\\otn-server_v0.1.0.exe");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "otn-server_v0.1.1.exe")
+			{
+				File::Delete(Application::StartupPath + "\\otn-server_v0.1.1.exe");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "OTNClient_v0.1.1.exe")
+			{
+				File::Delete(Application::StartupPath + "\\OTNClient_v0.1.1.exe");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "sparros_armel_20200108_alpha_v0.0.1.img.xz")
+			{
+				File::Delete(Application::StartupPath + "\\sparros_armel_20200108_alpha_v0.0.1.img.xz");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "sparros_armel_20200224_alpha_v0.0.2.img.xz")
+			{
+				File::Delete(Application::StartupPath + "\\sparros_armel_20200224_alpha_v0.0.2.img.xz");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "sparros_armhf_20200108_alpha_v0.0.1.img.xz")
+			{
+				File::Delete(Application::StartupPath + "\\sparros_armhf_20200108_alpha_v0.0.1.img.xz");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "sparros_armhf_20200224_alpha_v0.0.2.img.xz")
+			{
+				File::Delete(Application::StartupPath + "\\sparros_armhf_20200224_alpha_v0.0.2.img.xz");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "sparros_x64_20200108_alpha_v0.0.1.iso.zip")
+			{
+				File::Delete(Application::StartupPath + "\\sparros_x64_20200108_alpha_v0.0.1.iso.zip");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "sparros_x64_20200224_alpha_v0.0.2.iso.zip")
+			{
+				File::Delete(Application::StartupPath + "\\sparros_x64_20200224_alpha_v0.0.2.iso.zip");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "sparros_x86_20200108_alpha_v0.0.1.iso.zip")
+			{
+				File::Delete(Application::StartupPath + "\\sparros_x86_20200108_alpha_v0.0.1.iso.zip");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "sparros_x86_20200224_alpha_v0.0.2.iso.zip")
+			{
+				File::Delete(Application::StartupPath + "\\sparros_x86_20200224_alpha_v0.0.2.iso.zip");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "sparros_x86_20200224_alpha_v0.0.2.vmdk.zip")
+			{
+				File::Delete(Application::StartupPath + "\\sparros_x86_20200224_alpha_v0.0.2.vmdk.zip");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "SYGTVGTEST0040.exe")
+			{
+				File::Delete(Application::StartupPath + "\\SYGTVGTEST0040.exe");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "SYGTVGTEST0040_includes_discordrp.exe")
+			{
+				File::Delete(Application::StartupPath + "\\SYGTVGTEST0040_includes_discordrp.exe");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "unixv5.gba")
+			{
+				File::Delete(Application::StartupPath + "\\unixv5.gba");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "uptime_v1.0-bin-beta.zip")
+			{
+				File::Delete(Application::StartupPath + "\\uptime_v1.0-bin-beta.zip");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "uptime_v1.0-setup-beta.exe")
+			{
+				File::Delete(Application::StartupPath + "\\uptime_v1.0-setup-beta.exe");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "uptime_v1.0-bin-beta-legacy.zip")
+			{
+				File::Delete(Application::StartupPath + "\\uptime_v1.0-bin-beta-legacy.zip");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "uptime_v1.0-setup-beta-legacy.exe")
+			{
+				File::Delete(Application::StartupPath + "\\uptime_v1.0-setup-beta-legacy.exe");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "usrcheat-old_v0.1.zip")
+			{
+				File::Delete(Application::StartupPath + "\\usrcheat-old_v0.1.zip");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "Win9-Downloader.exe")
+			{
+				File::Delete(Application::StartupPath + "\\Win9-Downloader.exe");
+				CheckForFiles();
+				return;
+			}
+			if (downloadsListBox->SelectedItem == "yoes_usercheat-database_current.zip")
+			{
+				File::Delete(Application::StartupPath + "\\yoes_usercheat-database_current.zip");
 				CheckForFiles();
 				return;
 			}

@@ -3,7 +3,6 @@ SparrDrem Downloader Changelog
 - v1.1.0.0
 
   * "DownloadDb" class is now an independent library.
-  * Add FreeDOS for Dreamcast project.
   * Fix Gencode v0.5 Debug Setup download error.
   * Rename the OTN Server download executables after downloaded.
   * Remove the status.
