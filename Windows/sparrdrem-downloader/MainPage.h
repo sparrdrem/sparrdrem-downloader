@@ -1,19 +1,16 @@
-#pragma once
-
-/* Shit broke
-#define WIN32_LEAN_AND_MEAN
-#include <Windows.h>
-#include <tchar.h>
-
-#include <iostream>
-#include <iomanip>
-
-#include "hack.h"
-
-#include <wininet.h>
-
-using namespace std;
+/*
+ *
+ * MainPage.h
+ *
+ * Copyright (C) SparrOSDeveloperTeam 2015-2020
+ * Copyright (C) Innovation Inc. 2009-2020
+ * Copyright (C) SparrDrem 2018-2020
+ *
+ * This is the code for the form that launches at startup. To properly compile you need to
+ * first build DownloadDB.dll.
 */
+
+#pragma once
 
 //#include "..\downloaddb\DownloadDb.h"
 #include "About.h"
@@ -368,13 +365,6 @@ namespace sparrdremdownloader {
 				this->VersionComboBox->Enabled = true;
 				return;
 			}
-			// This repository will be removed
-			/*if (this->ProjectComboBox->Text == "OTNMCP (-= Pre-release =-)")
-			{
-				//this->VersionComboBox->Items->Add("v0.0.1.88-chrome");
-				this->VersionComboBox->Enabled = true;
-				return;
-			}*/
 			if (this->ProjectComboBox->Text == "Sam&Yoe Group: The Video Game")
 			{
 				this->VersionComboBox->Items->Add("Build #0040 (Discord Rich-Presence Included) (Special Edition)");
@@ -777,16 +767,6 @@ namespace sparrdremdownloader {
 					return;
 				}
 			}
-			// Repos up for deletion
-			/*if (this->ProjectComboBox->Text == "OTNMCP (-= Pre-release =-)")
-			{
-				if (this->VersionComboBox->Text == "v0.0.1.88-chrome")
-				{
-					this->ArchComboBox->Items->Add("x86");
-					this->ArchComboBox->Enabled = true;
-					return;
-				}
-			}*/
 			if (this->ProjectComboBox->Text == "Sam&Yoe Group: The Video Game")
 			{
 				if (this->VersionComboBox->Text == "Build #0040 (Discord Rich-Presence Included) (Special Edition)")
@@ -1426,19 +1406,6 @@ namespace sparrdremdownloader {
 					}
 				}
 			}
-			// Repos up for deletion
-			/*if (this->ProjectComboBox->Text == "OTNMCP (-= Pre-release =-)")
-			{
-				if (this->VersionComboBox->Text == "v0.0.1.88-chrome")
-				{
-					if (this->ArchComboBox->Text == "x86")
-					{
-						this->LanguageComboBox->Items->Add("English");
-						this->LanguageComboBox->Enabled = true;
-						return;
-					}
-				}
-			}*/
 			if (this->ProjectComboBox->Text == "Sam&Yoe Group: The Video Game")
 			{
 				if (this->VersionComboBox->Text == "Build #0040 (Discord Rich-Presence Included) (Special Edition)")
@@ -2660,28 +2627,6 @@ namespace sparrdremdownloader {
 					}
 				}
 			}
-			// Repos up for deletion
-			/*if (this->ProjectComboBox->Text == "OTNMCP (-= Pre-release =-)")
-			{
-				if (this->VersionComboBox->Text == "v0.0.1.88-chrome")
-				{
-					if (this->ArchComboBox->Text == "x86")
-					{
-						if (this->LanguageComboBox->Text == "English")
-						{
-							this->playableState->Text = "Downloading file .... please wait.";
-							this->DownloadBtn->Enabled = false;
-
-							DownloadDb::DownloadOTNMCP_v00188chrome_none_english();
-							
-							this->playableState->Text = "Ready.";
-							this->DownloadBtn->Enabled = true;
-							Process::Start("explorer.exe", Application::StartupPath);
-							return;
-						}
-					}
-				}
-			}*/
 			if (this->ProjectComboBox->Text == "Sam&Yoe Group: The Video Game")
 			{
 				if (this->VersionComboBox->Text == "Build #0040 (Discord Rich-Presence Included) (Special Edition)")
