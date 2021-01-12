@@ -176,6 +176,24 @@
   <data name="ProjectComboBox.Items9" xml:space="preserve">
     <value>OTN</value>
   </data>
+  <!-- Placeholder to remind myself evantually this needs to be added -->
+  <!--
+  <data name="ProjectComboBox.Items10" xml:space="preserve">
+    <value>Project Gossamer</value>
+  </data>
+  <data name="ProjectComboBox.Items11" xml:space="preserve">
+    <value>Project Gossamer (Beta Testing)</value>
+  </data>
+  -->
+  <!-- Placeholder for later -->
+  <!--
+  <data name="ProjectComboBox.Items10" xml:space="preserve">
+    <value>Project QemuVR</value>
+  </data>
+  <data name="ProjectComboBox.Items11" xml:space="preserve">
+    <value>Project QemuVR Drawingboard Channel</value>
+  </data>
+  -->
   <data name="ProjectComboBox.Items10" xml:space="preserve">
     <value>Sam&amp;Yoe Group: The Video Game</value>
   </data>
