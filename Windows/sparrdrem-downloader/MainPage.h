@@ -1,18 +1,20 @@
-/*
- *
- * MainPage.h
- *
- * Copyright (C) SparrOSDeveloperTeam 2015-2020
- * Copyright (C) Innovation Inc. 2009-2020
- * Copyright (C) SparrDrem 2018-2020
- *
- * This is the code for the form that launches at startup. To properly compile you need to
- * first build DownloadDB.dll.
-*/
+/*++
+	
+	MainPage.h
+
+	Copyright (C) 2015-2021 SparrOSDeveloperTeam,
+	Copyright (C) 2018-2021 SparrDrem,
+	Copyright (C) 2009-2021 Innovation Inc.
+
+	This is the code used for the main program. Notice
+	that in order to compile this code requires the
+	DownloadDB class library which stores the functions
+	referenced by this code.
+
+  --*/
 
 #pragma once
 
-//#include "..\downloaddb\DownloadDb.h"
 #include "About.h"
 #include "ManageDownloads.h"
 
@@ -70,6 +72,13 @@ namespace sparrdremdownloader {
 	private: System::Windows::Forms::LinkLabel^ linkLabel1;
 	private: System::Windows::Forms::Button^ manageBtn;
 	private: System::Windows::Forms::CheckBox^ launchInstallBox;
+	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::ComboBox^ ArtifactComboBox;
+	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::ComboBox^ SourceComboBox;
+	private: System::Windows::Forms::ComboBox^ BranchComboBox;
+
+	private: System::Windows::Forms::Label^ label7;
 
 
 
@@ -101,6 +110,12 @@ namespace sparrdremdownloader {
 			this->linkLabel1 = (gcnew System::Windows::Forms::LinkLabel());
 			this->manageBtn = (gcnew System::Windows::Forms::Button());
 			this->launchInstallBox = (gcnew System::Windows::Forms::CheckBox());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->ArtifactComboBox = (gcnew System::Windows::Forms::ComboBox());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->SourceComboBox = (gcnew System::Windows::Forms::ComboBox());
+			this->BranchComboBox = (gcnew System::Windows::Forms::ComboBox());
+			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -197,10 +212,55 @@ namespace sparrdremdownloader {
 			this->launchInstallBox->Name = L"launchInstallBox";
 			this->launchInstallBox->UseVisualStyleBackColor = true;
 			// 
+			// label5
+			// 
+			resources->ApplyResources(this->label5, L"label5");
+			this->label5->Name = L"label5";
+			// 
+			// ArtifactComboBox
+			// 
+			this->ArtifactComboBox->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
+			resources->ApplyResources(this->ArtifactComboBox, L"ArtifactComboBox");
+			this->ArtifactComboBox->FormattingEnabled = true;
+			this->ArtifactComboBox->Name = L"ArtifactComboBox";
+			this->ArtifactComboBox->TextChanged += gcnew System::EventHandler(this, &MainPage::ArtifactComboBox_SelectedIndexChanged);
+			// 
+			// label6
+			// 
+			resources->ApplyResources(this->label6, L"label6");
+			this->label6->Name = L"label6";
+			// 
+			// SourceComboBox
+			// 
+			this->SourceComboBox->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
+			resources->ApplyResources(this->SourceComboBox, L"SourceComboBox");
+			this->SourceComboBox->FormattingEnabled = true;
+			this->SourceComboBox->Name = L"SourceComboBox";
+			this->SourceComboBox->TextChanged += gcnew System::EventHandler(this, &MainPage::SourceComboBox_SelectedIndexChanged);
+			// 
+			// BranchComboBox
+			// 
+			this->BranchComboBox->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
+			resources->ApplyResources(this->BranchComboBox, L"BranchComboBox");
+			this->BranchComboBox->FormattingEnabled = true;
+			this->BranchComboBox->Name = L"BranchComboBox";
+			this->BranchComboBox->TextChanged += gcnew System::EventHandler(this, &MainPage::BranchComboBox_SelectedIndexChanged);
+			// 
+			// label7
+			// 
+			resources->ApplyResources(this->label7, L"label7");
+			this->label7->Name = L"label7";
+			// 
 			// MainPage
 			// 
 			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->Controls->Add(this->label7);
+			this->Controls->Add(this->BranchComboBox);
+			this->Controls->Add(this->SourceComboBox);
+			this->Controls->Add(this->label6);
+			this->Controls->Add(this->ArtifactComboBox);
+			this->Controls->Add(this->label5);
 			this->Controls->Add(this->launchInstallBox);
 			this->Controls->Add(this->manageBtn);
 			this->Controls->Add(this->linkLabel1);
@@ -230,10 +290,25 @@ namespace sparrdremdownloader {
 				this->VersionComboBox->Items->Clear();
 				this->VersionComboBox->Enabled = false;
 			}
+			if (this->ArtifactComboBox->Enabled == true)
+			{
+				this->ArtifactComboBox->Items->Clear();
+				this->ArtifactComboBox->Enabled = false;
+			}
 			if (this->ArchComboBox->Enabled == true)
 			{
 				this->ArchComboBox->Items->Clear();
 				this->ArchComboBox->Enabled = false;
+			}
+			if (this->BranchComboBox->Enabled == true)
+			{
+				this->BranchComboBox->Items->Clear();
+				this->BranchComboBox->Enabled = false;
+			}
+			if (this->SourceComboBox->Enabled == true)
+			{
+				this->SourceComboBox->Items->Clear();
+				this->SourceComboBox->Enabled = false;
 			}
 			if (this->LanguageComboBox->Enabled == true)
 			{
@@ -252,8 +327,9 @@ namespace sparrdremdownloader {
 				}
 				this->launchInstallBox->Enabled = false;
 			}
-			if (this->ProjectComboBox->Text == "casmOS (-= Pre-release =-)")
+			if (this->ProjectComboBox->Text == "casmOS (-= Archived =-)")
 			{
+				this->VersionComboBox->Items->Add("Latest (Source Code Only)");
 				this->VersionComboBox->Items->Add("v0.0.2.6-alpha");
 				this->VersionComboBox->Items->Add("v0.0.2-alpha");
 				this->VersionComboBox->Items->Add("v0.0.1-alpha");
@@ -365,18 +441,6 @@ namespace sparrdremdownloader {
 				this->VersionComboBox->Enabled = true;
 				return;
 			}
-			if (this->ProjectComboBox->Text == "Sam&Yoe Group: The Video Game")
-			{
-				this->VersionComboBox->Items->Add("Build #0040 (Discord Rich-Presence Included) (Special Edition)");
-				this->VersionComboBox->Items->Add("Build #0040 (Special Edition)");
-				this->VersionComboBox->Items->Add("Build #0030 (Not yet available)");
-				this->VersionComboBox->Items->Add("Build #0030 (Ported Edition) (Not yet available)");
-				this->VersionComboBox->Items->Add("Build #0020 (Not yet available)");
-				this->VersionComboBox->Items->Add("Build #0020 (Ported Edition) (Not yet available)");
-				this->VersionComboBox->Items->Add("Build #0010 (Not yet available)");
-				this->VersionComboBox->Enabled = true;
-				return;
-			}
 			if (this->ProjectComboBox->Text == "SparrOS (-= Pre-release =-)")
 			{
 				this->VersionComboBox->Items->Add("v0.0.2-alpha");
@@ -408,10 +472,25 @@ namespace sparrdremdownloader {
 			}
 		}
 		private: System::Void VersionComboBox_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+			if (this->ArtifactComboBox->Enabled == true)
+			{
+				this->ArtifactComboBox->Items->Clear();
+				this->ArtifactComboBox->Enabled = false;
+			}
 			if (this->ArchComboBox->Enabled == true)
 			{
 				this->ArchComboBox->Items->Clear();
 				this->ArchComboBox->Enabled = false;
+			}
+			if (this->BranchComboBox->Enabled == true)
+			{
+				this->BranchComboBox->Items->Clear();
+				this->BranchComboBox->Enabled = false;
+			}
+			if (this->SourceComboBox->Enabled == true)
+			{
+				this->SourceComboBox->Items->Clear();
+				this->SourceComboBox->Enabled = false;
 			}
 			if (this->LanguageComboBox->Enabled == true)
 			{
@@ -430,12 +509,22 @@ namespace sparrdremdownloader {
 				}
 				this->launchInstallBox->Enabled = false;
 			}
-			if (this->ProjectComboBox->Text == "casmOS (-= Pre-release =-)")
+			if (this->ProjectComboBox->Text == "casmOS (-= Archived =-)")
 			{
+				if (this->VersionComboBox->Text == "Latest (Source Code Only)")
+				{
+					this->ArtifactComboBox->Items->Add("Source (.ZIP)");
+					this->ArtifactComboBox->Enabled = true;
+					return;
+				}
 				if (this->VersionComboBox->Text == "v0.0.2.6-alpha")
 				{
-					this->ArchComboBox->Items->Add("x86_64");
-					this->ArchComboBox->Enabled = true;
+					this->ArtifactComboBox->Items->Add("Binary (.ISO)");
+					this->ArtifactComboBox->Items->Add("Source (.ZIP, .TAR.GZ)");
+					this->ArtifactComboBox->Enabled = true;
+					// These lines are temporarily turned off
+					//this->ArchComboBox->Items->Add("x86_64");
+					//this->ArchComboBox->Enabled = true;
 					return;
 				}
 				if (this->VersionComboBox->Text == "v0.0.2-alpha")
@@ -767,53 +856,6 @@ namespace sparrdremdownloader {
 					return;
 				}
 			}
-			if (this->ProjectComboBox->Text == "Sam&Yoe Group: The Video Game")
-			{
-				if (this->VersionComboBox->Text == "Build #0040 (Discord Rich-Presence Included) (Special Edition)")
-				{
-					this->ArchComboBox->Items->Add("x86");
-					this->ArchComboBox->Enabled = true;
-					this->launchInstallBox->Enabled = true;
-					return;
-				}
-				if (this->VersionComboBox->Text == "Build #0040 (Special Edition)")
-				{
-					this->ArchComboBox->Items->Add("x86");
-					this->ArchComboBox->Enabled = true;
-					this->launchInstallBox->Enabled = true;
-					return;
-				}
-				if (this->VersionComboBox->Text == "Build #0030 (Not yet available)")
-				{
-					this->ArchComboBox->Items->Add("x86");
-					this->ArchComboBox->Enabled = true;
-					return;
-				}
-				if (this->VersionComboBox->Text == "Build #0030 (Ported Edition) (Not yet available)")
-				{
-					this->ArchComboBox->Items->Add("None");
-					this->ArchComboBox->Enabled = true;
-					return;
-				}
-				if (this->VersionComboBox->Text == "Build #0020 (Not yet available)")
-				{
-					this->ArchComboBox->Items->Add("x86");
-					this->ArchComboBox->Enabled = true;
-					return;
-				}
-				if (this->VersionComboBox->Text == "Build #0020 (Ported Edition) (Not yet available)")
-				{
-					this->ArchComboBox->Items->Add("None");
-					this->ArchComboBox->Enabled = true;
-					return;
-				}
-				if (this->VersionComboBox->Text == "Build #0010 (Not yet available)")
-				{
-					this->ArchComboBox->Items->Add("x86");
-					this->ArchComboBox->Enabled = true;
-					return;
-				}
-			}
 			if (this->ProjectComboBox->Text == "SparrOS (-= Pre-release =-)")
 			{
 				if (this->VersionComboBox->Text == "v0.0.2-alpha")
@@ -891,7 +933,44 @@ namespace sparrdremdownloader {
 				}
 			}
 		}
+		private: System::Void ArtifactComboBox_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+			if (this->ProjectComboBox->Text == "casmOS (-= Archived =-)")
+			{
+				if (this->VersionComboBox->Text == "Latest (Source Code Only)")
+				{
+					if (this->ArtifactComboBox->Text == "Source (.ZIP)")
+					{
+						this->BranchComboBox->Items->Add("master");
+						this->BranchComboBox->Enabled = true;
+						return;
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.0.2.6-alpha")
+				{
+					if (this->ArtifactComboBox->Text == "Binary (.ISO)")
+					{
+						this->ArchComboBox->Items->Add("x86_64");
+						this->ArchComboBox->Enabled = true;
+						return;
+					}
+					if (this->ArtifactComboBox->Text == "Source (.ZIP, .TAR.GZ")
+					{
+						this->BranchComboBox->Items->Add("master");
+					}
+				}
+			}
+		}
 		private: System::Void ArchComboBox_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+			if (this->BranchComboBox->Enabled == true)
+			{
+				this->BranchComboBox->Items->Clear();
+				this->BranchComboBox->Enabled = false;
+			}
+			if (this->SourceComboBox->Enabled == true)
+			{
+				this->SourceComboBox->Items->Clear();
+				this->SourceComboBox->Enabled = false;
+			}
 			if (this->LanguageComboBox->Enabled == true)
 			{
 				this->LanguageComboBox->Items->Clear();
@@ -901,7 +980,7 @@ namespace sparrdremdownloader {
 			{
 				this->DownloadBtn->Enabled = false;
 			}
-			if (this->ProjectComboBox->Text == "casmOS (-= Pre-release =-)")
+			if (this->ProjectComboBox->Text == "casmOS (-= Archived =-)")
 			{
 				if (this->VersionComboBox->Text == "v0.0.2.6-alpha")
 				{
@@ -1406,72 +1485,6 @@ namespace sparrdremdownloader {
 					}
 				}
 			}
-			if (this->ProjectComboBox->Text == "Sam&Yoe Group: The Video Game")
-			{
-				if (this->VersionComboBox->Text == "Build #0040 (Discord Rich-Presence Included) (Special Edition)")
-				{
-					if (this->ArchComboBox->Text == "x86")
-					{
-						this->LanguageComboBox->Items->Add("English");
-						this->LanguageComboBox->Enabled = true;
-						return;
-					}
-				}
-				if (this->VersionComboBox->Text == "Build #0040 (Special Edition)")
-				{
-					if (this->ArchComboBox->Text == "x86")
-					{
-						this->LanguageComboBox->Items->Add("English");
-						this->LanguageComboBox->Enabled = true;
-						return;
-					}
-				}
-				if (this->VersionComboBox->Text == "Build #0030 (Not yet available)")
-				{
-					if (this->ArchComboBox->Text == "x86")
-					{
-						this->LanguageComboBox->Items->Add("English");
-						this->LanguageComboBox->Enabled = true;
-						return;
-					}
-				}
-				if (this->VersionComboBox->Text == "Build #0030 (Ported Edition) (Not yet available)")
-				{
-					if (this->ArchComboBox->Text == "None")
-					{
-						this->LanguageComboBox->Items->Add("English");
-						this->LanguageComboBox->Enabled = true;
-						return;
-					}
-				}
-				if (this->VersionComboBox->Text == "Build #0020 (Not yet available)")
-				{
-					if (this->ArchComboBox->Text == "x86")
-					{
-						this->LanguageComboBox->Items->Add("English");
-						this->LanguageComboBox->Enabled = true;
-						return;
-					}
-				}
-				if (this->VersionComboBox->Text == "Build #0020 (Ported Edition) (Not yet available)")
-				{
-					if (this->ArchComboBox->Text == "None")
-					{
-						this->LanguageComboBox->Items->Add("English");
-						this->LanguageComboBox->Enabled = true;
-						return;
-					}
-				}
-				if (this->VersionComboBox->Text == "Build #0010 (Not yet available)")
-				{
-					if (this->ArchComboBox->Text == "x86")
-					{
-						this->LanguageComboBox->Items->Add("English");
-						this->LanguageComboBox->Enabled = true;
-						return;
-					}
-				}
-			}
 			if (this->ProjectComboBox->Text == "SparrOS (-= Pre-release =-)")
 			{
 				if (this->VersionComboBox->Text == "v0.0.2-alpha")
@@ -1608,15 +1621,70 @@ namespace sparrdremdownloader {
 				}
 			}
 		}
+		private: System::Void BranchComboBox_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+			if (this->ProjectComboBox->Text == "casmOS (-= Archived =-)")
+			{
+				if (this->VersionComboBox->Text == "Latest (Source Code Only)")
+				{
+					if (this->ArtifactComboBox->Text == "Source (.ZIP)")
+					{
+						if (this->BranchComboBox->Text == "master")
+						{
+							this->SourceComboBox->Items->Add("Source .ZIP");
+							this->SourceComboBox->Enabled = true;
+							return;
+						}
+					}
+				}
+				if (this->VersionComboBox->Text == "v0.0.2.6-alpha")
+				{
+					if (this->ArtifactComboBox->Text == "Source (.ZIP, .TAR.GZ")
+					{
+						if (this->BranchComboBox->Text == "master")
+						{
+							this->SourceComboBox->Items->Add("Source .ZIP");
+							this->SourceComboBox->Items->Add("Source .TAR.GZ");
+							this->SourceComboBox->Enabled = true;
+							return;
+						}
+					}
+				}
+			}
+		}
 		private: System::Void ExitBtn_Click(System::Object^ sender, System::EventArgs^ e) {
 			Application::Exit();
+		}
+		private: System::Void SourceComboBox_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+			this->DownloadBtn->Enabled = true;
 		}
 		private: System::Void LanguageComboBox_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 			this->DownloadBtn->Enabled = true;
 		}
 		private: System::Void DownloadBtn_Click(System::Object^ sender, System::EventArgs^ e) {
-			if (this->ProjectComboBox->Text == "casmOS (-= Pre-release =-)")
+			if (this->ProjectComboBox->Text == "casmOS (-= Archived =-)")
 			{
+				if (this->VersionComboBox->Text == "Latest (Source Code Only)")
+				{
+					if (this->ArtifactComboBox->Text == "Source (.ZIP)")
+					{
+						if (this->BranchComboBox->Text == "master")
+						{
+							if (this->SourceComboBox->Text == "Source .ZIP")
+							{
+								this->DownloadBtn->Enabled = false;
+
+								String^ remoteUri = "https://github.com/sparrdrem/casmOS/archive/";
+								String^ fileName = "master.zip", ^ myStringWebResource = nullptr;
+
+								WebClient^ wcdl = gcnew WebClient;
+
+								myStringWebResource = String::Concat(remoteUri, fileName);
+
+								wcdl->DownloadFile(myStringWebResource, fileName);
+							}
+						}
+					}
+				}
 				if (this->VersionComboBox->Text == "v0.0.2.6-alpha")
 				{
 					if (this->ArchComboBox->Text == "x86_64")
@@ -2622,105 +2690,6 @@ namespace sparrdremdownloader {
 							File::Copy(Application::StartupPath + "\\otn-server.exe", Application::StartupPath + "\\otn-server_v0.0.1.exe");
 							File::Delete(Application::StartupPath + "\\otn-server.exe");
 							Process::Start("explorer.exe", Application::StartupPath);
-							return;
-						}
-					}
-				}
-			}
-			if (this->ProjectComboBox->Text == "Sam&Yoe Group: The Video Game")
-			{
-				if (this->VersionComboBox->Text == "Build #0040 (Discord Rich-Presence Included) (Special Edition)")
-				{
-					if (this->ArchComboBox->Text == "x86")
-					{
-						if (this->LanguageComboBox->Text == "English")
-						{
-							this->DownloadBtn->Enabled = false;
-
-							DownloadDb::DownloadSYGTVG_v0040discordrp_x86_english();
-							
-							this->DownloadBtn->Enabled = true;
-							if (this->launchInstallBox->Checked == true)
-							{
-								Process::Start(Application::StartupPath + "\\SYGTVGTEST0040_includes_discordrp.exe");
-							}
-							if (this->launchInstallBox->Checked == false)
-							{
-								Process::Start("explorer.exe", Application::StartupPath);
-							}
-							return;
-						}
-					}
-				}
-				if (this->VersionComboBox->Text == "Build #0040 (Special Edition)")
-				{
-					if (this->ArchComboBox->Text == "x86")
-					{
-						if (this->LanguageComboBox->Text == "English")
-						{
-							this->DownloadBtn->Enabled = false;
-
-							DownloadDb::DownloadSYGTVG_v0040_x86_english();
-
-							this->DownloadBtn->Enabled = true;
-							if (this->launchInstallBox->Checked == true)
-							{
-								Process::Start(Application::StartupPath + "\\SYGTVGTEST0040.exe");
-							}
-							if (this->launchInstallBox->Checked == false)
-							{
-								Process::Start("explorer.exe", Application::StartupPath);
-							}
-							return;
-						}
-					}
-				}
-				if (this->VersionComboBox->Text == "Build #0030 (Not yet available)")
-				{
-					if (this->ArchComboBox->Text == "x86")
-					{
-						if (this->LanguageComboBox->Text == "English")
-						{
-							return;
-						}
-					}
-				}
-				if (this->VersionComboBox->Text == "Build #0030 (Ported Edition) (Not yet available)")
-				{
-					if (this->ArchComboBox->Text == "None")
-					{
-						if (this->LanguageComboBox->Text == "English")
-						{
-							return;
-						}
-					}
-				}
-				if (this->VersionComboBox->Text == "Build #0020 (Not yet available)")
-				{
-					if (this->ArchComboBox->Text == "x86")
-					{
-						if (this->LanguageComboBox->Text == "English")
-						{
-							return;
-						}
-					}
-				}
-				if (this->VersionComboBox->Text == "Build #0020 (Ported Edition) (Not yet available)")
-				{
-					if (this->ArchComboBox->Text == "None")
-					{
-						if (this->LanguageComboBox->Text == "English")
-						{
-							return;
-						}
-					}
-				}
-				if (this->VersionComboBox->Text == "Build #0010 (Not yet available)")
-				{
-					if (this->ArchComboBox->Text == "x86")
-					{
-						if (this->LanguageComboBox->Text == "English")
-						{
 							return;
 						}
 					}

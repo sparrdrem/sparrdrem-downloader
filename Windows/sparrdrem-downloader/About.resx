@@ -117,4 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Copyright (C) 2018-2021 SparrDrem, (C) 2015-2021 SparrOSDeveloperTeam, (C) 2009-2021 Innovation Inc.
+
+Version 1.2.0.0
+
+Certain programs downloaded with this tool may require external tools such as 7-Zip to use them.</value>
+  </data>
 </root>

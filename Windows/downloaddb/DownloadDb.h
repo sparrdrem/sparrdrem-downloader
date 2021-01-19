@@ -24,11 +24,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
 
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadCasmOS_v002alpha_x86_english()
 	{
@@ -38,11 +35,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
 
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadCasmOS_v001alpha_x86_english()
 	{
@@ -52,11 +46,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadCasmOS_v000alpha_x86_english()
 	{
@@ -66,11 +57,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadCdosk_v001_x86_english()
 	{
@@ -80,11 +68,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadCdosk_v001prototype04092020_x86_english()
 	{
@@ -94,11 +79,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadCommodoreOSVisionII_b3200_x64_english()
 	{
@@ -108,11 +90,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadDremDOS_v001_x86_english()
 	{
@@ -122,11 +101,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadDremDOS_v001rc1_x86_english()
 	{
@@ -136,11 +112,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadDremDOS_v001prototype04082020_x86_english()
 	{
@@ -150,11 +123,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadDremOS_v060_x64_english()
 	{
@@ -164,11 +134,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadDTools_v12_x86_english()
 	{
@@ -178,11 +145,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadDTools_v11_x86_english()
 	{
@@ -192,11 +156,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadDTools_v10_x86_english()
 	{
@@ -206,11 +167,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGBAUnix_v00_arm7_english()
 	{
@@ -220,11 +178,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v05plus_x86_english()
 	{
@@ -234,11 +189,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v05preview_x86_english()
 	{
@@ -248,11 +200,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v05previewbin_x86_english()
 	{
@@ -262,11 +211,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v05previewgencmdonly_x86_english()
 	{
@@ -276,11 +222,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v05debug_x86_english()
 	{
@@ -290,11 +233,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
 
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v05debugbin_x86_english()
 	{
@@ -304,11 +244,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
 
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v04legacy_x86_english()
 	{
@@ -318,11 +255,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v04preview_x86_english()
 	{
@@ -332,11 +266,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v04previewbin_x86_english()
 	{
@@ -346,11 +277,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
 
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v04previewgencmdonly_x86_english()
 	{
@@ -360,11 +288,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
 
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v04preview_x86_spanish()
 	{
@@ -374,11 +299,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v04previewbin_x86_spanish()
 	{
@@ -388,11 +310,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v04previewgencmdonly_x86_spanish()
 	{
@@ -402,11 +321,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v04preview_x86_multilanguage()
 	{
@@ -416,11 +332,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v03preview_x86_english()
 	{
@@ -430,11 +343,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v03previewbin_x86_english()
 	{
@@ -444,11 +354,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
 
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v03previewgencmdonly_x86_english()
 	{
@@ -458,11 +365,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v02preview_x86_english()
 	{
@@ -472,11 +376,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v02previewbin_x86_english()
 	{
@@ -486,11 +387,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v02previewgencmdonly_x86_english()
 	{
@@ -500,11 +398,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v01bpreviewgencmdonly_x86_english()
 	{
@@ -514,11 +409,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
 
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v01preview_x86_english()
 	{
@@ -528,11 +420,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGencode_v01previewbin_x86_english()
 	{
@@ -542,11 +431,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
 
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGossamerLauncher_v0944227b_x64_english()
 	{
@@ -556,11 +442,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
 
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadGossamerLauncher_v0944227_x64_english()
 	{
@@ -570,11 +453,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadHostname_v01windows_x86_english()
 	{
@@ -584,11 +464,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadHostname_v01linux_x86_english()
 	{
@@ -598,11 +475,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadLALO_v0002windows_x64_english()
 	{
@@ -612,11 +486,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadLALO_v0002windows_x86_english()
 	{
@@ -626,11 +497,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadLALO_v0002windowsbin_x64_english()
 	{
@@ -640,11 +508,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadLALO_v0002windowsbin_x86_english()
 	{
@@ -654,11 +519,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadLALO_v0002linux_all_english()
 	{
@@ -668,11 +530,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadLALO_v0002linux_x64_english()
 	{
@@ -682,11 +541,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadLALO_v0002linux_x86_english()
 	{
@@ -696,11 +552,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadLALO_v0002linuxbin_x64_english()
 	{
@@ -710,11 +563,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadLALO_v0002linuxbin_x86_english()
 	{
@@ -724,11 +574,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadOTN_v011server_x86_english()
 	{
@@ -738,11 +585,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadOTN_v011client_x86_english()
 	{
@@ -752,11 +596,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadOTN_v010_x86_english()
 	{
@@ -766,11 +607,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadOTN_v008_x86_english()
 	{
@@ -780,11 +618,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadOTN_v007_x86_english()
 	{
@@ -794,11 +629,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Agent007 is stealing \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
 
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadOTN_v006_x86_english()
 	{
@@ -808,11 +640,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadOTN_v005_x86_english()
 	{
@@ -822,11 +651,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadOTN_v004_x86_english()
 	{
@@ -836,11 +662,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadOTN_v003_x86_english()
 	{
@@ -850,11 +673,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadOTN_v002_x86_english()
 	{
@@ -864,11 +684,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadOTN_v001_x86_english()
 	{
@@ -878,29 +695,9 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
-		  // Repos up for deletion
-		  /*
-				public: static void DownloadOTNMCP_v00188chrome_none_english()
-				{
-					String^ remoteUri = "https://github.com/sparrdrem/otnmcp/releases/download/0.0.1.88-Chrome/";
-					String^ fileName = "OTNMCP-Chrome.zip", ^ myStringWebResource = nullptr;
-
-					WebClient^ wcdl = gcnew WebClient;
-
-					myStringWebResource = String::Concat(remoteUri, fileName);
-					Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
-					wcdl->DownloadFile(myStringWebResource, fileName);
-					Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-					// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
-				}
-				*/
 	public: static void DownloadSYGTVG_v0040discordrp_x86_english()
 	{
 		String^ remoteUri = "https://github.com/SparrOSDeveloperTeam-Win/SYGTVG-REL/releases/download/v0.0040/";
@@ -909,11 +706,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadSYGTVG_v0040_x86_english()
 	{
@@ -923,31 +717,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
-	}
-	public: static void DownloadSYGTVG_v0030_x86_english()
-	{
-		// Reserved for the actual download
-	}
-	public: static void DownloadSYGTVG_v0030portededition_none_english()
-	{
-		// Reserved for the actual download
-	}
-	public: static void DownloadSYGTVG_v0020_x86_english()
-	{
-		// Reserved for the actual download
-	}
-	public: static void DownloadSYGTVG_v0020portededition_none_english()
-	{
-		// Reserved for the actual download
-	}
-	public: static void DownloadSYGTVG_v0010_x86_english()
-	{
-		// Reserved for the actual download
 	}
 	public: static void DownloadSparrOS_v002alpha_x64_english()
 	{
@@ -957,11 +728,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadSparrOS_v002alpha_x86_english()
 	{
@@ -971,11 +739,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadSparrOS_v002alphavmdk_x86_english()
 	{
@@ -985,11 +750,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadSparrOSEmbedded_v002alpha_rpimodern_english()
 	{
@@ -999,11 +761,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadSparrOSEmbedded_v002alpha_rpilegacy_english()
 	{
@@ -1013,11 +772,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
 
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadSparrOS_v001alpha_x64_english()
 	{
@@ -1027,11 +783,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadSparrOS_v001alpha_x86_english()
 	{
@@ -1041,11 +794,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadSparrOSEmbedded_v001alpha_rpimodern_english()
 	{
@@ -1055,11 +805,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadSparrOSEmbedded_v001alpha_rpilegacy_english()
 	{
@@ -1069,11 +816,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadUPTIME_v10284beta_x86_english()
 	{
@@ -1083,11 +827,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadUPTIME_v10284betabin_x86_english()
 	{
@@ -1097,11 +838,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadUPTIME_v10284betalegacy_x86_english()
 	{
@@ -1111,11 +849,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadUPTIME_v10284betalegacybin_x86_english()
 	{
@@ -1125,11 +860,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadWindows9Downloader_v04_x86_english()
 	{
@@ -1139,11 +871,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadYoesCheatDatabase_v02_arm_english()
 	{
@@ -1153,11 +882,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
 
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	public: static void DownloadYoesCheatDatabase_v01_arm_english()
 	{
@@ -1167,11 +893,8 @@ namespace sparrdremdownloader {
 		WebClient^ wcdl = gcnew WebClient;
 
 		myStringWebResource = String::Concat(remoteUri, fileName);
-		Debug::WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, myStringWebResource);
-
+		
 		wcdl->DownloadFile(myStringWebResource, fileName);
-		Debug::WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
-		// Debug::WriteLine("\nDownloaded file saved in the following file system folder:\n\t {0}", Application::StartupPath);
 	}
 	};
 }

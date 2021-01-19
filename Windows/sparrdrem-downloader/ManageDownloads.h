@@ -1,3 +1,18 @@
+/*++
+	
+	ManageDownloads.h
+
+	Copyright (C) 2015-2021 SparrOSDeveloperTeam,
+	Copyright (C) 2018-2021 SparrDrem,
+	Copyright (C) 2009-2021 Innovation Inc.
+
+	This is the downloaded file manager script. This
+	spawns a menu that allows you to interact with
+	downloaded files such as opening or removing any
+	selected file.
+
+  --*/
+
 #pragma once
 
 namespace sparrdremdownloader {

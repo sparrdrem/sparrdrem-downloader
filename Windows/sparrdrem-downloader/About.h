@@ -1,3 +1,16 @@
+/*++
+	
+	About.h
+
+	Copyright (C) 2015-2021 SparrOSDeveloperTeam,
+	Copyright (C) 2018-2021 SparrDrem,
+	Copyright (C) 2009-2021 Innovation Inc.
+
+	This is the code used for the About window. Nothing
+	special here.
+
+  --*/
+
 #pragma once
 
 namespace sparrdremdownloader {
@@ -51,6 +64,7 @@ namespace sparrdremdownloader {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(About::typeid));
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->closeBtn = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
@@ -61,15 +75,13 @@ namespace sparrdremdownloader {
 			this->textBox1->Multiline = true;
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->ReadOnly = true;
-			this->textBox1->Size = System::Drawing::Size(259, 86);
+			this->textBox1->Size = System::Drawing::Size(259, 113);
 			this->textBox1->TabIndex = 0;
-			this->textBox1->Text = L"Copyright (C) 2018-2020 SparrDrem, (C) 2015-2020 SparrOSDeveloperTeam, (C) 2009-2"
-				L"020 Innovation Inc.\r\n\r\nCertain programs downloaded with this tool may require ex"
-				L"ternal tools such as 7-Zip to use them.";
+			this->textBox1->Text = resources->GetString(L"textBox1.Text");
 			// 
 			// closeBtn
 			// 
-			this->closeBtn->Location = System::Drawing::Point(197, 105);
+			this->closeBtn->Location = System::Drawing::Point(197, 132);
 			this->closeBtn->Name = L"closeBtn";
 			this->closeBtn->Size = System::Drawing::Size(75, 23);
 			this->closeBtn->TabIndex = 1;
@@ -81,7 +93,7 @@ namespace sparrdremdownloader {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(284, 135);
+			this->ClientSize = System::Drawing::Size(284, 166);
 			this->ControlBox = false;
 			this->Controls->Add(this->closeBtn);
 			this->Controls->Add(this->textBox1);
